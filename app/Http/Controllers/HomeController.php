@@ -77,6 +77,11 @@ class HomeController extends Controller
     /*
      * Pages Routs
      */
+         public function brodick(Request $request): View
+    {
+        return view('wx.brodick');
+    }
+     
     public function billing(Request $request): View
     {
         return view('special-pages.billing');
