@@ -172,7 +172,7 @@ if (($wind)<20){
 
 
 
-$sym = '<img src="./images/weathersymbols/'.$symbol. '.svg" width="50" height="50">';
+$sym = '<img src="../images/weathersymbols/'.$symbol. '.svg" width="50" height="50">';
 
 if ($symbol == ''){
     $sym ='&nbsp;';
