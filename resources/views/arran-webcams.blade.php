@@ -7,7 +7,7 @@
             
 <div >
 <iframe
-    src="https://player.twitch.tv/?channel=cmalbrodick&parent=test.arranweather.com"
+    src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com"
     height="100%"
     width="100%"
     allowfullscreen>
@@ -20,7 +20,7 @@
                     </div></div></div>
                                       <div class="card">
 <iframe
-    src="https://player.twitch.tv/?channel=cmallochranza&parent=test.arranweather.com"
+    src="https://player.twitch.tv/?channel=cmallochranza&parent=wx.arranweather.com"
     height="100%"
     width="100%"
     allowfullscreen>
