@@ -1,4 +1,4 @@
-<x-app-layout :assets="$assets ?? []" title='Fancy Table' :isBanner="true">
+<x-app-layout :assets="$assets ?? []" title='Brodick Long Range Weather Forecast' :isBanner="true">
 <div class="row">
    <div class="col-lg-12">
        <div class="">
