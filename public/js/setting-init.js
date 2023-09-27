@@ -118,7 +118,7 @@
             return {
             "setting": {
                 "app_name": {
-                    "value": "Hope UI"
+                    "value": "Arran Weather"
                 },
                 "theme_scheme_direction": {
                     "value": "ltr"
@@ -181,7 +181,7 @@
             return {
             "setting": {
                 "app_name": {
-                    "value": "Hope UI"
+                    "value": "Arran Weather"
                 },
                 "theme_scheme_direction": {
                     "value": "ltr"
@@ -241,7 +241,7 @@
             return {
             "setting": {
                 "app_name": {
-                    "value": "Hope UI"
+                    "value": "Arran Weather"
                 },
                 "theme_scheme_direction": {
                     "value": "ltr"
