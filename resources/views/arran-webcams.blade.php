@@ -41,7 +41,7 @@ Picture
                             <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
                             <a href="#" class="btn btn-primary">NAC Road Cams</a>
                         </div>
-                    </div></div>                    <div class="card">
+                    </div></div>   </div>                 <div class="card">
             
 <div >
 Picture
@@ -50,7 +50,7 @@ Picture
                             <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
                             <a href="#" class="btn btn-primary">NAC Road Cams</a>
                         </div>
-                    </div></div></div>
+                    </div></div>
                 
                  </div>
                   </div>
