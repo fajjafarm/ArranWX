@@ -186,9 +186,13 @@ $day = $timeedt->format('l jS F');
 $dayy = $timeedt->format('d');
 $time = $timeedt->format('H:i');
 $rain = "0";
-
+$uv ="&nbsp;";
 if (isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'])){
     $rain= $data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'];
+}
+
+if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'])){
+    $uv= $data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'];
 }
 
 
