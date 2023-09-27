@@ -23,7 +23,7 @@ class AppSettingTableSeeder extends Seeder
                 "saveLocal": "",
                 "storeKey": "huisetting",
                 "setting": {
-                    "app_name": { "value" : "Hope UI"},
+                    "app_name": { "value" : "Arran Weather"},
                     "theme_scheme_direction": { "value": "ltr" },
                     "theme_scheme": { "value": "light" },
                     "theme_color": { "value": "theme-color-default" },

@@ -53,7 +53,7 @@
           <h5 class="mb-3 mt-4">App Name</h5>
           <div class="d-grid gap-3 grid-cols-1 mb-4">
             <div class="form-group mb-0">
-              <input type="text" data-setting="input" maxlength="8" name="app_name" class="form-control" value="">
+              <input type="text" data-setting="input" maxlength="20" name="app_name" class="form-control" value="">
             </div>
           </div>
 
