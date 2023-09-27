@@ -87,7 +87,7 @@
       app_name: {
         target: '[data-setting="app_name"]',
         type: "text",
-        value: "Hope UI",
+        value: "Arran Weather",
       },
       theme_scheme_direction: {
         target: "html",
