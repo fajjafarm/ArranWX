@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://test.arranweather.com'),
+    'url' => env('APP_URL', 'http://wx.arranweather.com'),
 
     'asset_url' => env('ASSET_URL', null),
 
