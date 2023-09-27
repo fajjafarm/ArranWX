@@ -190,7 +190,7 @@ $uv ="&nbsp;";
 if (!isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'])){
     $rain= $data['properties']['timeseries'][$i]['data']['next_6_hours']['details']['precipitation_amount'];
 } else{
-    $rain = = $data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'];
+    $rain = $data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'];
 }
 
 if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'])){
