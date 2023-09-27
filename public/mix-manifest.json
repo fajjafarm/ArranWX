@@ -1,0 +1,33 @@
+{
+    "/js/core/libs.min.js": "/js/core/libs.min.js",
+    "/js/core/external.min.js": "/js/core/external.min.js",
+    "/js/vue.min.js": "/js/vue.min.js",
+    "/js/iqonic-script/setting.min.js": "/js/iqonic-script/setting.min.js",
+    "/js/iqonic-script/utility.min.js": "/js/iqonic-script/utility.min.js",
+    "/css/libs.min.css": "/css/libs.min.css",
+    "/css/dark.css": "/css/dark.css",
+    "/css/custom.css": "/css/custom.css",
+    "/css/hope-ui.css": "/css/hope-ui.css",
+    "/css/pro.css": "/css/pro.css",
+    "/css/customizer.css": "/css/customizer.css",
+    "/css/rtl.css": "/css/rtl.css",
+	"/css/social.css": "/css/social.css",
+	"/js/social.js": "/js/social.js",
+"/css/blog.css": "/css/blog.css",
+"/js/blog.js": "/js/blog.js",
+"/css/mail.css": "/css/mail.css",
+"/js/mail.js": "/js/mail.js",
+"/css/e-commerce.css": "/css/e-commerce.css",
+"/js/e-commerce.js": "/js/e-commerce.js",
+"/css/appointment.css": "/css/appointment.css",
+"/js/appointment.js": "/js/appointment.js",
+"/css/file-manager.css": "/css/file-manager.css",
+"/js/file-manager.js": "/js/file-manager.js",
+"/css/chat.css": "/css/chat.css",
+"/js/chat.js": "/js/chat.js"
+
+
+
+
+
+}
