@@ -73,7 +73,7 @@ $menu_style = $this->parentMenu($menu, [
             $this->childMain($menu_style, [
                 'shortTitle' => 'br',
                 'title' => 'Brodick',
-                'route' => 'menu-style.horizontal'
+                'route' => 'brodick'
             ]);
                         $this->childMain($menu_style, [
                 'shortTitle' => 'co',
