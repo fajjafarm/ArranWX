@@ -185,6 +185,13 @@ $timeedt =new DateTime($timee);
 $day = $timeedt->format('l jS F');
 $dayy = $timeedt->format('d');
 $time = $timeedt->format('H:i');
+$rain = "0";
+
+if isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount']){
+    $rain= $data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'];
+}
+
+
 if ($time == '00:00'){
     echo '<thead><tr class="table-dark">
                 <td colspan ="2">'.$day.'</td>                                   <td >Temp.</td>
