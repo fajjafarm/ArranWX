@@ -8,7 +8,7 @@
                         <thead>
                            <tr class="table-dark">
                                <td >Today</td>
-                                <td >&nbsp</td>                                                              
+                                <td >&nbsp;</td>                                                              
                                    <td >Temp.</td>
                                        <td >Avg. Wind</td>
                                            <td >Gust</td>
