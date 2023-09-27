@@ -220,11 +220,6 @@ echo ' <td class="text-dark"> '.$rain.'mm</td>';
 echo ' <td class="text-dark"> '.$uv. '</td>';
 echo ' <td class="text-dark"> '.$portt.'</td>';
 echo ' <td class="text-dark">'.$sym.'</td>';
-
-
-
-echo ' <td class="text-dark">'.$wvht. '</td>';
-echo ' <td class="text-dark">'.($data['properties']['timeseries'][0]['data']['instant']['details']['fog_area_fraction']). '</td>';
 echo '</tr>';
 $symbol ='';
 $fog ='';
