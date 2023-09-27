@@ -187,7 +187,7 @@ $dayy = $timeedt->format('d');
 $time = $timeedt->format('H:i');
 $rain = "0";
 
-if isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount']){
+if (isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'])){
     $rain= $data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'];
 }
 
