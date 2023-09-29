@@ -58,7 +58,7 @@ echo $flood;?>
 echo $flood;?>
                     
                                            
-                    </div> <div class="col">
+                    </div> <div class="col"><div class="d-grid gap-2 d-md-flex justify-content-md-end"">
                     <div>
                         <a href="https://calmac.co.uk" class="btn btn-link btn-soft-light">
                             <svg class="icon-20" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ echo $flood;?>
                             </svg>
                             NAC Roads
                         </a>
-                    </div></div>
+                    </div></div></div>
                 </div>
             </div>
         </div>
