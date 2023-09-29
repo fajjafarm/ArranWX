@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title data-setting="app_name" data-rightJoin=" Pro | Responsive Bootstrap 5 Admin Dashboard Template">
-        {{ env('APP_NAME') }} | Responsive Bootstrap 5 Admin Dashboard Template</title>
+        {{ env('APP_NAME') }} | Arran Weather</title>
     <meta name="description"
         content="Hope UI – free bootstrap 5 admin dashboard template comes with over 200+ elements finely crafted to speed up your development cycles. Production Ready Premium Dashboard UI Kit And Design System">
     <meta name="keywords"
