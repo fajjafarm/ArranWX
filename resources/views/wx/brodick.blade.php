@@ -2,7 +2,7 @@
 $lat ='55.575';
 $lon ='-5.1452';
 $alt ='0';
-$url = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$lat.'&lon='.$lon.'&altitude='.$alt.'';
+$url = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$lat.'&lon='.$lon.'&altitude='.$alt.'';?>
 
 
 
