@@ -2,7 +2,7 @@
 $lat ='55.575';
 $lon ='-5.1452';
 $alt ='0';
-$url = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$lat.'&lon='.$lon.'&altitude='.$alt.'';?>
+$urlfetch = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$lat.'&lon='.$lon.'&altitude='.$alt.'';?>
 
 
 
@@ -15,7 +15,7 @@ $url = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$lat.'
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                           <td colspan="11"><strong>Brodick</strong> Forecast | Pop. approx 900 | lat: <? echo $lat; ?> | lon: <? echo $lon; ?></td>
+                           <td colspan="11"><strong>Brodick</strong> Forecast | Pop. approx 900 | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?></td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
                                 <td >Weather</td>                                                              
