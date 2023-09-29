@@ -1,3 +1,11 @@
+<?php
+$lat ='55.575';
+$lon ='-5.1452';
+$alt ='0';
+$url = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$lat.'&lon='.$lon.'&altitude='.$alt.'';
+
+
+
 <x-app-layout :assets="$assets ?? []" title='Brodick Long Range Weather Forecast' :isBanner="true">
 <div class="row">
    <div class="col-lg-12">
@@ -7,7 +15,7 @@
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                           <td colspan="11">Brodick Forecast | Pop. approx 900 | lat: 55.5751 | lon: -5.1452</td>
+                           <td colspan="11"><strong>Brodick</strong> Forecast | Pop. approx 900 | lat: <? echo $lat; ?> | lon: <? echo $lon; ?></td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
                                 <td >Weather</td>                                                              
