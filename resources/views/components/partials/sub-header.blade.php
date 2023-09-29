@@ -26,9 +26,9 @@
 <strong> FLOOD WARNING</strong> in force  - visit SEPA for more info
 </div>';
     }              
-                     ?>
+                     
 
-
+echo $flood;?>
                     
                                            
                     </div>
