@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title data-setting="app_name" data-rightJoin=" Pro | Responsive Bootstrap 5 Admin Dashboard Template">
-        {{ env('APP_NAME') }} | Arran Weather</title>
+        {{ $title }} | Arran Weather</title>
     <meta name="description"
-        content="Hope UI – free bootstrap 5 admin dashboard template comes with over 200+ elements finely crafted to speed up your development cycles. Production Ready Premium Dashboard UI Kit And Design System">
+        content="Ferry Forecast for the Isle of Arran">
     <meta name="keywords"
-        content="premium, admin, dashboard, template, bootstrap 5, clean ui, hope ui, admin dashboard,responsive dashboard, optimized dashboard,">
-    <meta name="author" content="Iqonic Design">
-    <meta name="DC.title" content="{{ env('APP_NAME') }} Pro| Responsive Bootstrap 5 Admin Dashboard Template">
+        content="Ferry, Forecast,  Isle of Arran">
+    <meta name="author" content="Arran Weather ">
+    <meta name="DC.title" content="{{ $title }} | Arran Weather">
     <!-- Style Link start -->
     @include('components.partials._head')
     <!-- Style Link end -->
