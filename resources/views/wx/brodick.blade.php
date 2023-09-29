@@ -17,7 +17,7 @@
                                                    <td >Rain</td>
                                                       <td >UV</td>
                                                            <td >Fog</td>
-                                                           <td >Humidity</td></tr>
+                                                           <td >Humidity </td></tr>
                         </thead>
                         <tbody>
                        
@@ -214,7 +214,7 @@ if ($time == '00:00'){
                                                    <td >Rain</td>
                                                       <td >UV</td>
                                                            <td >Fog</td>
-                                                           <td >Humidity</td></tr></thead>';
+                                                           <td >Humidity </td></tr></thead>';
 }
 echo '<tr>';
 echo ' <td>'.$time. '</td>';
