@@ -7,6 +7,8 @@
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
+                           <td colspan="11">Brodick Forecast | Pop. approx 900 | lat: 55.5751 | lon: -5.1452</td>
+                           </tr><tr>
                                <td >Today</td>
                                 <td >Weather</td>                                                              
                                    <td >Temp.</td>
