@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title data-setting="app_name" data-rightJoin=" Pro | Responsive Bootstrap 5 Admin Dashboard Template">
+    <title data-setting="app_name" data-rightJoin=" | Arran Weather">
         {{ $title }} | Arran Weather</title>
     <meta name="description"
         content="Ferry Forecast for the Isle of Arran">

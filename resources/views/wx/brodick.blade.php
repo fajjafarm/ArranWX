@@ -8,7 +8,7 @@
                         <thead>
                            <tr class="table-dark">
                                <td >Today</td>
-                                <td >&nbsp;</td>                                                              
+                                <td >Weather</td>                                                              
                                    <td >Temp.</td>
                                        <td >Avg. Wind</td>
                                            <td >Gust</td>
@@ -187,6 +187,7 @@ $dayy = $timeedt->format('d');
 $time = $timeedt->format('H:i');
 $rain = "0";
 $uv ="&nbsp;";
+$fog ='0';
 if (!isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'])){
     $rain= $data['properties']['timeseries'][$i]['data']['next_6_hours']['details']['precipitation_amount'];
 } else{
@@ -194,9 +195,14 @@ if (!isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['detail
 }
 
 if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'])){
-    $uv= $data['properties']['timeseries'][$i]['data']['instant']['details']['relative_humidity'];
+    $uv= $data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'];
 }
-
+if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['fog_area_fraction'])){
+    $fog= $data['properties']['timeseries'][$i]['data']['instant']['details']['fog_area_fraction'];
+}
+if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['relative_humidity'])){
+    $hum= $data['properties']['timeseries'][$i]['data']['instant']['details']['relative_humidity'];
+}
 
 if ($time == '00:00'){
     echo '<thead><tr class="table-dark">
@@ -220,8 +226,8 @@ echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.
 echo ' <td class="text-dark"> '.$dirn. '</td>';
 echo ' <td class="text-dark"> '.$rain.'mm</td>';
 echo ' <td class="text-dark"> '.$uv. '</td>';
-echo ' <td class="text-dark"> '.$portt.'</td>';
-echo ' <td class="text-dark">'.$sym.'</td>';
+echo ' <td class="text-dark"> '.$fog.'%</td>';
+echo ' <td class="text-dark">'.$hum.'%</td>';
 echo '</tr>';
 $symbol ='';
 $fog ='';
