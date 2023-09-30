@@ -15,7 +15,7 @@ $urlfetch = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat='.$
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                           <td colspan="11"><strong>Brodick</strong> Forecast | Pop. approx 900 | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?></td>
+                           <td colspan="11"><strong>Brodick</strong> Forecast | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
                                 <td >Weather</td>                                                              

@@ -8,7 +8,7 @@
     <title data-setting="app_name" data-rightJoin=" | Arran Weather">
         {{ $title }} | Arran Weather</title>
     <meta name="description"
-        content="Ferry Forecast for the Isle of Arran">
+        content="Long range  weather forecasts and data from Arran">
     <meta name="keywords"
         content="Ferry, Forecast,  Isle of Arran">
     <meta name="author" content="Arran Weather ">
