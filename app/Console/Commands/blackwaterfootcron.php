@@ -20,7 +20,7 @@ class blackwaterfootron extends Command
      *
      * @var string
      */
-    protected $description = 'blackwaterfoot wx';
+    protected $description = 'blackwaterfoot wxx';
 
     /**
      * Execute the console command.
