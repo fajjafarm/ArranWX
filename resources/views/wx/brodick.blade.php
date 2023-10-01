@@ -249,7 +249,9 @@ $fog ='';
                 
                 ?>
                 
-                
+                <tr class="table-dark">
+                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $data['properties']['meta']['updated_at'];?> </td>
+                           </tr>
                 
 
                                                                               
