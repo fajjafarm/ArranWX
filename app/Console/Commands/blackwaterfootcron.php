@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 //use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
-class BrodickCron extends Command
+class blackwaterfootron extends Command
 {
     /**
      * The name and signature of the console command.
