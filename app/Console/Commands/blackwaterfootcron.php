@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 //use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
-class blackwaterfootcron extends Command
+class BrodickCron extends Command
 {
     /**
      * The name and signature of the console command.
@@ -39,7 +39,7 @@ class blackwaterfootcron extends Command
 
 $context = stream_context_create($options);
         
-                $path = "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.5020&lon=5.3321&altitude=5";
+                $path = "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.5020&lon=-5.3321&altitude=5";
                 $contents = file_get_contents($path, false, $context);
                 
                 if (! Storage::put('blackwaterfoot.json', $contents)) {

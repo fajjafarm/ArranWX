@@ -67,7 +67,7 @@ $menu_style = $this->parentMenu($menu, [
 // Submenu-Menu_Style - Child
             $this->childMain($menu_style, [
                 'shortTitle' => 'bf',
-                'title' => 'Blackwaterfoot',
+                'title' => 'catacol',
                 'route' => 'menu-style.horizontal'
             ]);
             $this->childMain($menu_style, [

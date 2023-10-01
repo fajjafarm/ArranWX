@@ -9,7 +9,7 @@ class Kernel extends ConsoleKernel
 {
     protected $commands = [
         \App\Console\Commands\brodickcron::class,
-        \App\Console\Commands\blackwaterfootcron::class,
+        \App\Console\Commands\catacolcron::class,
         \App\Console\Commands\catacolcron::class,
         \App\Console\Commands\corriecron::class,
         \App\Console\Commands\dougariecron::class,
@@ -35,7 +35,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
          $schedule->command('brodickcron')->cron('0 */3 * * *');
-         $schedule->command('blackwaterfootcron')->cron('0 */3 * * *');
+         $schedule->command('catacolcron')->cron('0 */3 * * *');
          $schedule->command('catacolcron')->cron('0 */3 * * *');
          $schedule->command('corriecron')->cron('0 */3 * * *');
          $schedule->command('dougariecron')->cron('0 */3 * * *');
