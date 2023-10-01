@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 //use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
-class blackwaterfootcron extends Command
+class catacolcron extends Command
 {
     /**
      * The name and signature of the console command.
