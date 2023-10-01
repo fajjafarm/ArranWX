@@ -246,11 +246,15 @@ $fog ='';
 //echo "<pre>";
 //    print_r($data);
 //echo "</pre>";      
-                
+               $updatetimee = $data['properties']['meta']['updated_at'];
+$updatetimeedt =new DateTime($updatetimee);
+$day2 = $updatetimeedt->format('l jS F');
+$dayy2 = $updatetimeedt->format('d');
+$time2 = $updatetimeedt->format('H:i');
                 ?>
                 
                 <tr class="table-dark">
-                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $data['properties']['meta']['updated_at'];?> </td>
+                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $time2.' '.$dayy2.' '.$day2;?> </td>
                            </tr>
                 
 
