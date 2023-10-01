@@ -13,14 +13,14 @@ class blackwaterfootcron extends Command
      *
      * @var string
      */
-    protected $signature = 'blackwaterfootcron';
+    protected $signature = 'catacolcron';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'blackwaterfoot wx';
+    protected $description = 'catacol wx';
 
     /**
      * Execute the console command.
