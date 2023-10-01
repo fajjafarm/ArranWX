@@ -37,10 +37,10 @@ $urlfetch = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.
         //https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.5751&lon=-5.1452&altitude=0
         //https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=55.5751&lon=-5.1452&altitude=0
         
-        $json = \File::json('ferryforecast.json');
+       // $json = \File::json('ferryforecast.json');
 //$json = file_get_contents("https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=55.5751&lon=-5.1452&altitude=0");
-$json = \File::get('ferryforecast.json');
-
+//$json = \File::get('ferryforecast.json');
+$json =Storage::get('brodick.json');
 
 $data = json_decode($json, true);
 $i = 0;
