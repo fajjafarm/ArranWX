@@ -12,7 +12,7 @@ class BrodickCron extends Command
      *
      * @var string
      */
-    protected $signature = 'app:brodick-cron';
+    protected $signature = 'brodickcron';
 
     /**
      * The console command description.
