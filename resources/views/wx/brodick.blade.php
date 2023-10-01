@@ -248,7 +248,7 @@ $fog ='';
 //echo "</pre>";      
                $updatetimee = $data['properties']['meta']['updated_at'];
 $updatetimeedt =new DateTime($updatetimee);
-$day2 = $updatetimeedt->format('l jS F');
+$day2 = $updatetimeedt->format('jS F');
 $dayy2 = $updatetimeedt->format('d');
 $time2 = $updatetimeedt->format('H:i');
                 ?>
