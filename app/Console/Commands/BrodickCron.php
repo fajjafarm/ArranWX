@@ -40,8 +40,8 @@ class BrodickCron extends Command
 $context = stream_context_create($options);
         
                 $path = "https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.575&lon=-5.1452&altitude=0";
-       // Storage::putFileAs('brodick.json', file_get_contents($path, false, $context));
-  Storage::putFile('brodick.json', new File(file_get_contents($path, false, $context)), 'public');
+       Storage::putFileAs('brodick.json', file_get_contents($path, false, $context));
+ // Storage::putFile('brodick.json', new File(file_get_contents($path, false, $context)), 'public');
         $path = Storage::path('/jsoncron/brodick.json');
   
         //return response()->download($path);
