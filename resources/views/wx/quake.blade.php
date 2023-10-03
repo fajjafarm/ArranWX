@@ -38,9 +38,9 @@ for ($i = 0; $i <= $count; $i++){
    
 echo '<tr>';
 echo ' <td>'.($data['item']['title']). '</td>';
-echo ' <td class="text-dark"> '.($data['item']['description'].'</td>';
-echo ' <td class="text-dark">'.($data['item']['link'].'</td>';
-echo ' <td class="text-dark">'.($data['item']['pubDate']. '&degC</td>';
+echo ' <td class="text-dark"> '.($data['item']['description']).'</td>';
+echo ' <td class="text-dark">'.($data['item']['link']).'</td>';
+echo ' <td class="text-dark">'.($data['item']['pubDate']). '&degC</td>';
 echo '</tr>';
      
                 
