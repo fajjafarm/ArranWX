@@ -48,9 +48,12 @@ $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['
 //if ($mag >= 3){
  //   $mag ='<strong>'.$mag.'</strong>';
 //}
-  
+$trclass = '<tr>';
+  if(preg_match('(arran|clyde)', $location) === 1) { 
+    $trclass= '<tr class="table-warning">';
+  } 
    
-echo '<tr>';
+echo $trclass;
 echo ' <td class="text-dark">'.substr($mag, 0, 6). '</td>';
 echo ' <td class="text-dark">'.$depth. '</td>';
 echo ' <td class="text-dark"> '.$location.'</td>';
