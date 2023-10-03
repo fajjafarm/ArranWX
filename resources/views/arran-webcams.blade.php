@@ -8,7 +8,7 @@
 <div >
 <iframe
     src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com"
-    height="66%"
+    height="200%"
     width="100%"
     allowfullscreen>
 </iframe>
