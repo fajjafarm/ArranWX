@@ -35,7 +35,7 @@
                     <div class="card">
             
 <div >
-<?php $string1=Storage::url('stringcam1.jpg');?>
+<?php $string1=Storage::url('public/stringcam1.jpg');?>
                         <div class="card-body">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="<?php echo $string1 ?>" />
                             <h5 class="card-title">NAC String Road Cam</h5>
