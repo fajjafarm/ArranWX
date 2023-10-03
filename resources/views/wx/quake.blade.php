@@ -40,15 +40,19 @@ for ($i = 0; $i <= $count; $i++){
   $location = $parts['2'];
   $depths =(explode(";",$data['channel']['item'][$i]['description'])); 
   $depth =  $depths['3'];
+  $depth =  substr($mag, 0, 7);
   $location = substr($location, 0, strpos($location, ","));
           
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
+if ($mag >= 3){
+    $mag ='<strong>'.$mag.'</strong>';
+}
   
    
 echo '<tr>';
-echo ' <td class="text-dark"><strong>'.substr($mag, 0, 6). '</strong></td>';
-echo ' <td class="text-dark"><strong>'.$depth. '</strong></td>';
+echo ' <td class="text-dark">'.substr($mag, 0, 6). '</td>';
+echo ' <td class="text-dark">'.$depth. '</td>';
 echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
 echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '</td>';
