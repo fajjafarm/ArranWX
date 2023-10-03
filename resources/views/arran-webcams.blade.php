@@ -5,11 +5,10 @@
                 <div class="col">
                     <div class="card">
             
-<div >
 		<div class='wrapper'>
 			<div class='twitchWrapper'>
 				<div class='twitchStream'>
-					<iframe src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com" frameborder="0" scrolling="no" width="100%"></iframe>
+					<iframe src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com" frameborder="0" scrolling="no" ></iframe>
 				</div>
 				</div>
 		</div>
@@ -18,14 +17,15 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">CMAL Brodick</a>
                         </div>
-                    </div></div></div>
+                    </div></div>
                                       <div class="card">
-<iframe
-    src="https://player.twitch.tv/?channel=cmallochranza&parent=wx.arranweather.com"
-    height="100%"
-    width="100%"
-    allowfullscreen>
-</iframe>
+		<div class='wrapper'>
+			<div class='twitchWrapper'>
+				<div class='twitchStream'>
+					<iframe src="https://player.twitch.tv/?channel=cmallochranza&parent=wx.arranweather.com" frameborder="0" scrolling="no" ></iframe>
+				</div>
+				</div>
+		</div>
                         <div class="card-body">
                             <h5 class="card-title">Lochranza Pier Calmac Webcam</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
