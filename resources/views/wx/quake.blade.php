@@ -10,8 +10,8 @@
                                <td >Magnitude</td>
                                 <td >Depth</td>
                                 <td >Location</td>                                                              
-                                   <td >link</td>
-                                       <td >pubdate</td>
+                                   <td >Link</td>
+                                       <td >Date</td>
                                           
                         </thead>
                         <tbody>
@@ -71,7 +71,12 @@ echo $thead;
                 
                 ?>
                 
-                
+                <thead>
+                           <tr class="table-dark">
+                               <td colspan="5">Recent UK seismic events recorded by the BGS Seismology team</td>
+                                
+                                          
+                        </thead>
                 
 
                                                                               
