@@ -45,6 +45,23 @@ $context = stream_context_create($options);
                 if (! Storage::put('/brodickwebcam/'.time().'.jpg', $contents)) {
     echo ' The file could not be written to disk...';
 }
+                $path1 = "https://alerts.live-website.com/roadcamimages/2382_cam1.jpg";
+                $contents = file_get_contents($path1, false, $context);
+                
+                if (! Storage::put('/stringcam1/'.time().'.jpg', $contents)) {
+    echo ' The file could not be written to disk...';
+}
+                if (! Storage::put('stringcam1.jpg', $contents)) {
+    echo ' The file could not be written to disk...';
+}
+                $path2 = "https://alerts.live-website.com/roadcamimages/2382_cam2.jpg";
+                $contents = file_get_contents($path2, false, $context);
+                                if (! Storage::put('stringcam2.jpg', $contents)) {
+    echo ' The file could not be written to disk...';
+}
+                if (! Storage::put('/stringcam2/'.time().'.jpg', $contents)) {
+    echo ' The file could not be written to disk...';
+}
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
  // Storage::disk('local')->putFile('brodick.json', new File(file_get_contents($path, false, $context)), 'public');
   //      $path = Storage::path('brodick.json');
