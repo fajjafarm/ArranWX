@@ -53,7 +53,7 @@ if (str_contains($location, 'CLYDE')) {
    $trclass= '<thead><tr class="table-info">';
    $thead ='</thead>';
 }
-if (str_contains($location, 'Arran')) { 
+if (str_contains($location, 'ARRAN')) { 
      $trclass= '<thead><tr class="table-warning">';
      $thead ='</thead>';
 }
