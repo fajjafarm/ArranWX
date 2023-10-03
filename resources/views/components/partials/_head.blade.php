@@ -8,6 +8,9 @@
 <!-- Library / Plugin Css Build -->
 <link rel="stylesheet" href="{{ asset('css/libs.min.css') }}">
 
+<!-- Library / Plugin Css Build -->
+<link rel="stylesheet" href="{{ asset('css/twitch.css') }}">
+
 @if ($isFlatpickr ?? '')
     <!-- Flatpickr Styles -->
     <link rel="stylesheet" href="{{ asset('vendor/flatpickr/dist/flatpickr.min.css') }}">
