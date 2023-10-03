@@ -41,7 +41,7 @@ class HomeController extends Controller
             public function quake(Request $request): View
     {
         $assets = ['chart', 'animation'];
-        return view('quake', compact('assets'));
+        return view('wx.quake', compact('assets'));
     }
 
 
