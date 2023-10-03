@@ -9,7 +9,7 @@
 		<div class='wrapper'>
 			<div class='twitchWrapper'>
 				<div class='twitchStream'>
-					<iframe src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com" frameborder="0" scrolling="no"></iframe>
+					<iframe src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com" frameborder="0" scrolling="no" width="100%"></iframe>
 				</div>
 				</div>
 		</div>
