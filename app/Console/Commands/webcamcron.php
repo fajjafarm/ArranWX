@@ -59,10 +59,10 @@ $context = stream_context_create($options);
 }
                 $path2 = "https://alerts.live-website.com/roadcamimages/2382_cam2.jpg";
                 $contents = file_get_contents($path2, false, $context);
-                                if (! Storage::put('stringcam2.jpg', $contents)) {
+                                if (! Storage::put('public/stringcam2.jpg', $contents)) {
     echo ' The file could not be written to disk...';
 }
-                if (! Storage::put('public/stringcam2/'.time().'.jpg', $contents)) {
+                if (! Storage::put('stringcam2/'.time().'.jpg', $contents)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
