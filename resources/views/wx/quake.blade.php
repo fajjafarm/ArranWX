@@ -35,11 +35,11 @@ $count = $count-2;
 
 for ($i = 0; $i <= $count; $i++){
   $parts = (explode(":",$data['channel']['item'][$i]['title']));
-  
+ 
   $location = $parts['2'];
-  $depth =
+  $depth =$parts['5'];  
   $location = substr($location, 0, strpos($location, ","));
-  
+          
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
   
@@ -48,7 +48,7 @@ echo '<tr>';
 echo ' <td class="text-dark"><strong>'.substr($mag, 0, 6). '</strong></td>';
 echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
-echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '&degC</td>';
+echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '</td>';
 echo '</tr>';
      }
                 
