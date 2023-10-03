@@ -15,7 +15,7 @@
 
 $data = json_decode($json, true);
 
-$i = 0;
+$i = 1;
 $count= count($data['channel']['item']);
           for ($i = 0; $i <= $count; $i++){ 
             if (str_contains($data['channel']['item'][$i]['title'], 'Arran')){
