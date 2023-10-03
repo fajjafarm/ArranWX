@@ -42,7 +42,7 @@ echo ' <td class="text-dark"> '.($data['item']['description']).'</td>';
 echo ' <td class="text-dark">'.($data['item']['link']).'</td>';
 echo ' <td class="text-dark">'.($data['item']['pubDate']). '&degC</td>';
 echo '</tr>';
-     
+     }
                 
                 ?>
                 
