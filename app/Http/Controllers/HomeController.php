@@ -38,6 +38,11 @@ class HomeController extends Controller
         $assets = ['chart', 'animation'];
         return view('arran-webcams', compact('assets'));
     }
+            public function quake(Request $request): View
+    {
+        $assets = ['chart', 'animation'];
+        return view('earthquakes-near-arran', compact('quake'));
+    }
 
 
     /*
