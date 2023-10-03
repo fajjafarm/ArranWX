@@ -6,21 +6,21 @@ use Illuminate\Console\Command;
 //use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
-class sepacron extends Command
+class webcamcron extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'sepacron';
+    protected $signature = 'webcamcron';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'sepa wx';
+    protected $description = 'webcam wx';
 
     /**
      * Execute the console command.
@@ -39,10 +39,10 @@ class sepacron extends Command
 
 $context = stream_context_create($options);
         
-                $path = "https://floodline.sepa.org.uk/feed/";
+                $path = "https://webcam.cottagesonarran.co.uk/photo.jpg";
                 $contents = file_get_contents($path, false, $context);
                 
-                if (! Storage::put('sepa.xml', $contents)) {
+                if (! Storage::put('/brodickwebcam/'.time().'jpg', $contents)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
