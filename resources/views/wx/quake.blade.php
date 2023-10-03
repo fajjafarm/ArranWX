@@ -42,7 +42,7 @@ for ($i = 0; $i <= $count; $i++){
   $depth =  $depths['3'];
   $depth =  substr($depth, 7);
   $location = substr($location, 0, strpos($location, ","));
-          
+   $thead ='';       
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
 //if ($mag >= 3){
