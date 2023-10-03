@@ -41,8 +41,16 @@ $context = stream_context_create($options);
         
                 $path = "https://quakes.bgs.ac.uk/feeds/MhSeismology.xml";
                 $contents = file_get_contents($path, false, $context);
+                $xml = simplexml_load_string($contents);
+
+                $json = json_encode($xml);
+
+                $jsonfile = json_decode($json,TRUE);
                 
-                if (! Storage::put('quake.xml', $contents)) {
+                
+                
+                
+                if (! Storage::put('quake.json', $jsonfile)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
