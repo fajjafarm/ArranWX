@@ -8,6 +8,7 @@
                         <thead>
                            <tr class="table-dark">
                                <td >Magnitude</td>
+                                <td >Depth</td>
                                 <td >Location</td>                                                              
                                    <td >link</td>
                                        <td >pubdate</td>
@@ -46,6 +47,7 @@ $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['
    
 echo '<tr>';
 echo ' <td class="text-dark"><strong>'.substr($mag, 0, 6). '</strong></td>';
+echo ' <td class="text-dark"><strong>'.$depth. '</strong></td>';
 echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
 echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '</td>';
