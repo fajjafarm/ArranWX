@@ -34,14 +34,19 @@ $count = $count-2;
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
 
 for ($i = 0; $i <= $count; $i++){
-  print_r (explode(":",$data['channel']['item'][$i]['title']));
+  $parts = (explode(":",$data['channel']['item'][$i]['title']));
+  
+  $location = $parts['2'];
+  $depth =
+  
+  
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
   
    
 echo '<tr>';
 echo ' <td class="text-dark"><strong>'.substr($mag, 0, 6). '</strong></td>';
-echo ' <td class="text-dark"> '.($data['channel']['item'][$i]['description']).'</td>';
+echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
 echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '&degC</td>';
 echo '</tr>';
