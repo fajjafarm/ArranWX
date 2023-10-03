@@ -28,7 +28,7 @@ $json =Storage::get('quake.json');
 
 $data = json_decode($json, true);
 $i = 0;
-$count= count($data['item']);
+$count= count($data['channel']['item']);
 $count = $count-2;
 
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
@@ -37,10 +37,10 @@ for ($i = 0; $i <= $count; $i++){
   
    
 echo '<tr>';
-echo ' <td>'.($data['item']['title']). '</td>';
-echo ' <td class="text-dark"> '.($data['item']['description']).'</td>';
-echo ' <td class="text-dark">'.($data['item']['link']).'</td>';
-echo ' <td class="text-dark">'.($data['item']['pubDate']). '&degC</td>';
+echo ' <td>'.($data['channel']['item']['title']). '</td>';
+echo ' <td class="text-dark"> '.($data['channel']['item']['description']).'</td>';
+echo ' <td class="text-dark">'.($data['channel']['item']['link']).'</td>';
+echo ' <td class="text-dark">'.($data['channel']['item']['pubDate']). '&degC</td>';
 echo '</tr>';
      }
                 
