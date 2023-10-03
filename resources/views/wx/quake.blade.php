@@ -31,7 +31,7 @@ $data = json_decode($json, true);
 $i = 0;
 $count= count($data['channel']['item']);
 $count = $count-2;
-
+$mag='0';
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
 
 for ($i = 0; $i <= $count; $i++){
@@ -40,7 +40,7 @@ for ($i = 0; $i <= $count; $i++){
   $location = $parts['2'];
   $depths =(explode(";",$data['channel']['item'][$i]['description'])); 
   $depth =  $depths['3'];
-  $depth =  substr($mag, 0, 7);
+  $depth =  substr($depth, 0, 7);
   $location = substr($location, 0, strpos($location, ","));
           
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
@@ -51,7 +51,7 @@ if ($mag >= 3){
   
    
 echo '<tr>';
-echo ' <td class="text-dark">'.substr($mag, 0, 6). '</td>';
+echo ' <td class="text-dark">'.$mag. '</td>';
 echo ' <td class="text-dark">'.$depth. '</td>';
 echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
