@@ -33,7 +33,7 @@ $count= count($data['channel']['item']);
 $count = $count-2;
 $mag='0';
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
-$trclass = '<tr>';
+
 for ($i = 0; $i <= $count; $i++){
   $parts = (explode(":",$data['channel']['item'][$i]['title']));
  
@@ -48,7 +48,7 @@ $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['
 //if ($mag >= 3){
  //   $mag ='<strong>'.$mag.'</strong>';
 //}
-
+$trclass = '<tr>';
  if (preg_match("/\b(ARRAN|CLYDE)\b/", $location)) {
     $trclass= '<tr class="table-warning">';
   } 
