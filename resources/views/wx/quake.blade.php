@@ -50,10 +50,12 @@ $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['
 //}
 $trclass = '<tr>';
 if (str_contains($location, 'CLYDE')) { 
-   $trclass= '<tr class="table-info">';
+   $trclass= '<thead><tr class="table-info">';
+   $thead ='</thead>';
 }
 if (str_contains($location, 'Arran')) { 
-     $trclass= '<tr class="table-warning">';
+     $trclass= '<thead><tr class="table-warning">';
+     $thead ='</thead>';
 }
 
    
@@ -64,6 +66,7 @@ echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
 echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '</td>';
 echo '</tr>';
+echo $thead;
      }
                 
                 ?>
