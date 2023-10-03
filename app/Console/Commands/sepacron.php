@@ -47,6 +47,14 @@ $context = stream_context_create($options);
                 if (! Storage::put('sepa.json', $json)) {
     echo ' The file could not be written to disk...';
 }
+                $path = "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/st";
+                $contents = file_get_contents($path, false, $context);
+                $xml = simplexml_load_string($contents);
+
+                $json = json_encode($xml);
+                if (! Storage::put('warn.json', $json)) {
+    echo ' The file could not be written to disk...';
+}
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
  // Storage::disk('local')->putFile('brodick.json', new File(file_get_contents($path, false, $context)), 'public');
   //      $path = Storage::path('brodick.json');
