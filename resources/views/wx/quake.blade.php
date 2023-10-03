@@ -37,10 +37,10 @@ for ($i = 0; $i <= $count; $i++){
   
    
 echo '<tr>';
-echo ' <td>'.($data['channel']['item']['title']). '</td>';
-echo ' <td class="text-dark"> '.($data['channel']['item']['description']).'</td>';
-echo ' <td class="text-dark">'.($data['channel']['item']['link']).'</td>';
-echo ' <td class="text-dark">'.($data['channel']['item']['pubDate']). '&degC</td>';
+echo ' <td>'.($data['channel']['item'][$i]['title']). '</td>';
+echo ' <td class="text-dark"> '.($data['channel']['item'][$i]['description']).'</td>';
+echo ' <td class="text-dark">'.($data['channel']['item'][$i]['link']).'</td>';
+echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '&degC</td>';
 echo '</tr>';
      }
                 
