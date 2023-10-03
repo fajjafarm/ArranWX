@@ -45,13 +45,13 @@ for ($i = 0; $i <= $count; $i++){
           
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
-if ($mag >= 3){
-    $mag ='<strong>'.$mag.'</strong>';
-}
+//if ($mag >= 3){
+ //   $mag ='<strong>'.$mag.'</strong>';
+//}
   
    
 echo '<tr>';
-echo ' <td class="text-dark">'.$mag. '</td>';
+echo ' <td class="text-dark">'.substr($mag, 0, 6). '</td>';
 echo ' <td class="text-dark">'.$depth. '</td>';
 echo ' <td class="text-dark"> '.$location.'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
