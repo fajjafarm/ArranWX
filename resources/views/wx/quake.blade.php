@@ -7,8 +7,8 @@
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                               <td >title</td>
-                                <td >description</td>                                                              
+                               <td >Magnitude</td>
+                                <td >Location</td>                                                              
                                    <td >link</td>
                                        <td >pubdate</td>
                                           
@@ -40,7 +40,7 @@ $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['
   
    
 echo '<tr>';
-echo ' <td class="text-dark"><strong>'.substr($mag, 0, 5). '</strong></td>';
+echo ' <td class="text-dark"><strong>'.substr($mag, 0, 6). '</strong></td>';
 echo ' <td class="text-dark"> '.($data['channel']['item'][$i]['description']).'</td>';
 echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
 echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '&degC</td>';
