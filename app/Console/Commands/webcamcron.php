@@ -42,7 +42,7 @@ $context = stream_context_create($options);
                 $path = "https://webcam.cottagesonarran.co.uk/photo.jpg";
                 $contents = file_get_contents($path, false, $context);
                 
-                if (! Storage::put('/brodickwebcam/'.time().'jpg', $contents)) {
+                if (! Storage::put('/brodickwebcam/'.time().'.jpg', $contents)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
