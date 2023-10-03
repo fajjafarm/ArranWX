@@ -38,6 +38,7 @@
 <div >
 <?php $string1=Storage::url('public/stringcam1.jpg');?>
 <?php $string2=Storage::url('public/stringcam2.jpg');?>
+<?php $brodickcam=Storage::url('public/brodickwebcam.jpg');?>
                         <div class="card-body">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $string1 ?>" />
                             <h5 class="card-title">NAC String Road Cam West</h5>
@@ -52,6 +53,16 @@
                             <h5 class="card-title">NAC String Road Cam East</h5>
                             <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
                             <a href="https://www.north-ayrshire.gov.uk/roads-and-travel/roadcams.aspx" class="btn btn-primary">NAC Road Cams</a>
+                        </div>
+                    </div></div>
+                    <div class="card">
+            
+<div >
+                        <div class="card-body">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $brodickcam ?>" />
+                            <h5 class="card-title">NAC String Road Cam East</h5>
+                            <p class="card-text">A fantastic view across Brodick Beach, over the bay and up to Goatfell. Webcam is run by the amazing team at Cottages On Arran team</p>
+                            <a href="https://www.cottagesonarran.co.uk/arran-webcam/" class="btn btn-primary">cottageonarran.com</a>
                         </div>
                     </div></div>
                 
