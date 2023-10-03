@@ -40,7 +40,7 @@ for ($i = 0; $i <= $count; $i++){
   $location = $parts['2'];
   $depths =(explode(";",$data['channel']['item'][$i]['description'])); 
   $depth =  $depths['3'];
-  $depth =  substr($depth, 0, 7);
+  $depth =  substr($depth, 7);
   $location = substr($location, 0, strpos($location, ","));
           
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
