@@ -41,7 +41,7 @@ class HomeController extends Controller
             public function quake(Request $request): View
     {
         $assets = ['chart', 'animation'];
-        return view('earthquakes-near-arran', compact('quake'));
+        return view('earthquakes-near-arran', compact('assets'));
     }
 
 
