@@ -41,8 +41,10 @@ $context = stream_context_create($options);
         
                 $path = "https://floodline.sepa.org.uk/feed/";
                 $contents = file_get_contents($path, false, $context);
-                
-                if (! Storage::put('sepa.xml', $contents)) {
+                $xml = simplexml_load_string($contents);
+
+                $json = json_encode($xml);
+                if (! Storage::put('sepa.json', $json)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
