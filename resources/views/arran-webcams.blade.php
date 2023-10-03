@@ -36,8 +36,9 @@
             
 <div >
 <?php $string1=Storage::url('public/stringcam1.jpg');?>
+<?php $string2=Storage::url('public/stringcam2.jpg');?>
                         <div class="card-body">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="180" src="<?php echo $string1 ?>" />
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $string1 ?>" />
                             <h5 class="card-title">NAC String Road Cam</h5>
                             <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
                             <a href="#" class="btn btn-primary">NAC Road Cams</a>
@@ -47,6 +48,7 @@
 <div >
 Picture
                         <div class="card-body">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $string2 ?>" />
                             <h5 class="card-title">NAC String Road Cam</h5>
                             <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
                             <a href="#" class="btn btn-primary">NAC Road Cams</a>
