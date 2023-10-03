@@ -2,7 +2,7 @@
 <div class="iq-navbar-header" style="height: 215px;">
     <div class="container-fluid iq-container">
         <div class="row">
-            <div class="col-md-12">{{title}}
+            <div class="col-md-12">
                 <div class="d-flex  align-items-center flex-wrap">
                     <div><?php 
                     $floodstatus ='';
