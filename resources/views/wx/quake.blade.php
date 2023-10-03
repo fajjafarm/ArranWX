@@ -35,11 +35,14 @@ $count = $count-2;
 
 for ($i = 0; $i <= $count; $i++){
   
+$mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
+  
+  
    
 echo '<tr>';
-echo ' <td>'.($data['channel']['item'][$i]['title']). '</td>';
+echo ' <td>'.$mag. '</td>';
 echo ' <td class="text-dark"> '.($data['channel']['item'][$i]['description']).'</td>';
-echo ' <td class="text-dark">'.($data['channel']['item'][$i]['link']).'</td>';
+echo ' <td class="text-dark"><a href="'.($data['channel']['item'][$i]['link']).'" target="_blank">View</a></td>';
 echo ' <td class="text-dark">'.($data['channel']['item'][$i]['pubDate']). '&degC</td>';
 echo '</tr>';
      }
