@@ -60,7 +60,7 @@
 <div >
                         <div class="card-body">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $brodickcam ?>" />
-                            <h5 class="card-title">NAC String Road Cam East</h5>
+                            <h5 class="card-title">Cottage on Arran Webcam</h5>
                             <p class="card-text">A fantastic view across Brodick Beach, over the bay and up to Goatfell. Webcam is run by the amazing team at Cottages On Arran team</p>
                             <a href="https://www.cottagesonarran.co.uk/arran-webcam/" class="btn btn-primary">cottageonarran.com</a>
                         </div>
