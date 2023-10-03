@@ -34,7 +34,7 @@ $count = $count-2;
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
 
 for ($i = 0; $i <= $count; $i++){
-  print_r (explode(";",$data['channel']['item'][$i]['title']));
+  print_r (explode(":",$data['channel']['item'][$i]['title']));
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
   
