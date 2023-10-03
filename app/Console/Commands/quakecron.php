@@ -45,12 +45,12 @@ $context = stream_context_create($options);
 
                 $json = json_encode($xml);
 
-                $jsonfile = json_decode($json,TRUE);
+               // $jsonfile = json_decode($json,TRUE);
                 
                 
                 
                 
-                if (! Storage::put('quake.json', $jsonfile)) {
+                if (! Storage::put('quake.json', $json)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
