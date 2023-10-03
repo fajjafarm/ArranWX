@@ -38,7 +38,7 @@ for ($i = 0; $i <= $count; $i++){
   
   $location = $parts['2'];
   $depth =
-  
+  $location = substr($location, 0, strpos($location, ","));
   
 $mag = str_replace('UK Earthquake alert : ', "", ($data['channel']['item'][$i]['title']))  ;
 
