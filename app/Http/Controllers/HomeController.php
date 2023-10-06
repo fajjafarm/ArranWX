@@ -32,7 +32,7 @@ class HomeController extends Controller
         $title = 'Arran Ferry Forecast2';
         $description = 'A rough guide to possible weather realted ferry disruption';
         $assets = ['chart', 'animation'];
-        return view('wx.ferryforecast', compact('assets','title'));
+        return view('wx.ferryforecast', compact('title','description','assets'));
     }
     
         public function arranwebcams(Request $request): View
