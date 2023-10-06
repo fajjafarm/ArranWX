@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title data-setting="app_name" data-rightJoin=" | Arran Weather">
-        {{ $title }} | Arran Weather</title>
+        {{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }} | Arran Weather</title>
     <meta name="description"
         content="Long range  weather forecasts and data from Arran">
     <meta name="keywords"
