@@ -1,5 +1,5 @@
 <x-app-layout :assets="$assets ?? []" title='Arran Ferry Forecast' :isBanner="true">
-<div class="row">
+<div class="row">{{ description }}
    <div class="col-lg-12">
        <div class="">
            <div class="card-body">
