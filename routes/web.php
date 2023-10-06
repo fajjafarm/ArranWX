@@ -39,7 +39,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::post('/permission-role/store',[RolePermission::class, 'store'])->name('permission-role.store');
     Route::resource('permission',PermissionController::class);
     Route::resource('role', RoleController::class);
-
+});
     // Dashboard Routes
     Route::get('/dashboards', [HomeController::class, 'index'])->name('dashboards');
     // Dashboard Routes
@@ -55,7 +55,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/alternate-dashboard', [HomeController::class, 'index1'])->name('dashboard.alternate');
     // Users Module
     Route::resource('users', UserController::class);
-});
+
 //App Details Page => 'special-pages'], function() {
 Route::group(['prefix' => 'Forecasts'], function() {
     //Example Page Routs
