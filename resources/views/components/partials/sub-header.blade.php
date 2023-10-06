@@ -1,8 +1,9 @@
+@props(['dir', 'title', 'isNavbar', 'isTour'])
 <div class="iq-navbar-header" style="height: 215px;">
     <div class="container-fluid iq-container">
         <div class="row">
             <div class="col-md-12">
-                <div class="d-flex  align-items-center flex-wrap">
+                <div class="d-flex  align-items-center flex-wrap">{{ $title }}
                     <div><?php 
                     $floodstatus ='';
                     $flood = '   <div class="alert alert-success  mt-3" role="alert">
