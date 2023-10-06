@@ -29,14 +29,14 @@ class HomeController extends Controller
     }
     public function ferryforecast(Request $request): View
     {
-        $title = 'Arran Ferry Forecast';
+        $title = 'Arran Ferry Forecast2';
         $assets = ['chart', 'animation'];
         return view('wx.ferryforecast', compact('assets','title'));
     }
     
         public function arranwebcams(Request $request): View
     {
-        $title = 'Arran Webcams';
+        $title = 'Arran Webcams2';
         $assets = ['chart', 'animation'];
         return view('arran-webcams', compact('assets','title'));
     }
