@@ -12,7 +12,7 @@
     <meta name="keywords"
         content="Ferry, Forecast,  Isle of Arran">
     <meta name="author" content="Arran Weather ">
-    <meta name="DC.title" content="{{ $title }} | Arran Weather">
+    <meta name="DC.title" content="{{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }} | Arran Weather">
     <!-- Style Link start -->
     @include('components.partials._head')
     <!-- Style Link end -->
