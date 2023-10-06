@@ -3,7 +3,7 @@
     <div class="container-fluid iq-container">
         <div class="row">
             <div class="col-md-12">
-                <div class="d-flex  align-items-center flex-wrap">{{title}}
+                <div class="d-flex  align-items-center flex-wrap">
                     <div><?php 
                     $floodstatus ='';
                     $flood = '   <div class="alert alert-success  mt-3" role="alert">
