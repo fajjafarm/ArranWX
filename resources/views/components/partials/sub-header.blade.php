@@ -1,4 +1,5 @@
 @props(['dir', 'title', 'isNavbar', 'isTour'])
+<x-header :title=$title></x-header>
 <div class="iq-navbar-header" style="height: 215px;">
     <div class="container-fluid iq-container">
         <div class="row">
