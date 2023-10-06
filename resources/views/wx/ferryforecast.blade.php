@@ -1,5 +1,7 @@
 <x-app-layout :assets="$assets ?? []" title='Arran Ferry Forecast' :isBanner="true">
 <div class="row">
+<h3>{{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}</h3>
+<h5>{{ isset($description) ? $description . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}</h5>
    <div class="col-lg-12">
        <div class="">
            <div class="card-body">

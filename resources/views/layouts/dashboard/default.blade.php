@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title data-setting="app_name" data-rightJoin=" | Arran Weather">
-        {{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }} | Arran Weather</title>
+        {{ $title }} | Arran Weather</title>
     <meta name="description"
         content="Long range  weather forecasts and data from Arran">
     <meta name="keywords"
         content="Ferry, Forecast,  Isle of Arran">
     <meta name="author" content="Arran Weather ">
-    <meta name="DC.title" content="{{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }} | Arran Weather">
+    <meta name="DC.title" content="{{ $title }} | Arran Weather">
     <!-- Style Link start -->
     @include('components.partials._head')
     <!-- Style Link end -->
