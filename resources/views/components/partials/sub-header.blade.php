@@ -3,7 +3,7 @@
     <div class="container-fluid iq-container">
         <div class="row">
             <div class="col-md-12"><h3>{{ title }}</h3>
-<h5>{{ isset($description) ? $description . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}</h5>
+<h5></h5>
                 <div class="d-flex  align-items-center flex-wrap">
                     <div><?php 
                     $floodstatus ='';
