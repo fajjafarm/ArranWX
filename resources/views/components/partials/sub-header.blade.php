@@ -1,5 +1,5 @@
 <div class="iq-navbar-header" style="height: 215px;">
-    <div class="container-fluid iq-container">{{ title }}
+    <div class="container-fluid iq-container">
         <div class="row">
             <div class="col-md-12"><h3>{{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}</h3>
 <h5>{{ isset($description) ? $description . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}</h5>
