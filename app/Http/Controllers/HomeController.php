@@ -94,6 +94,13 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
+             public function sannox(Request $request): View
+    {
+        $title = "Sannox Long Range Forecast";
+        //$location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
              public function blackwaterfoot(Request $request): View
     {
         $title = "Blackwaterfoot Long Range Forecast";
