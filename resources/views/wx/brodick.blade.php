@@ -17,7 +17,7 @@ $location =''; ?>
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                           <td colspan="11"><strong>{{ isset($location) ? $location : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
+                           <td colspan="11"><strong>{{ isset($title) ? $title : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
                                 <td >Weather</td>                                                              
