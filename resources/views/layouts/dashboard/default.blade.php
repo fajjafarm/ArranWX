@@ -1,4 +1,4 @@
-@props(['dir', 'title', 'isNavbar', 'isTour'])
+@props(['dir', 'title', 'description', 'isNavbar', 'isTour'])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr">
 
