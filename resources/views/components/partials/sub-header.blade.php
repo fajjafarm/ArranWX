@@ -1,8 +1,8 @@
-<x-app-layout :assets="$assets ?? []" :title="$title" :isBanner="true"/>
+<x-app-layout :assets="$assets ?? []" :title2="$title2" :isBanner="true"/>
 <div class="iq-navbar-header" style="height: 215px;">
     <div class="container-fluid iq-container">
         <div class="row">
-            <div class="col-md-12"><h3>{{ title }}</h3>
+            <div class="col-md-12"><h3>{{ title2 }}</h3>
 <h5></h5>
                 <div class="d-flex  align-items-center flex-wrap">
                     <div><?php 
