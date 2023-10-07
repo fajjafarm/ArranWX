@@ -89,7 +89,10 @@ class HomeController extends Controller
      */
          public function brodick(Request $request): View
     {
-        return view('wx.brodick');
+        $title = "Brodick Long Range Forecast";
+        $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
     }
      
     public function billing(Request $request): View
