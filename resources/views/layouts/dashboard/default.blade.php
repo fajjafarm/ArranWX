@@ -21,7 +21,7 @@
 <body class="">
     <!-- Loader Start -->
     <div id="loading">
-        <x-partials._body_loader />
+        <x-partials._body_loader :location="$location ?? []"/>
     </div>
     <!-- Loader End -->
 
