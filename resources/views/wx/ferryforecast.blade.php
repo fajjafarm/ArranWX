@@ -1,4 +1,3 @@
-<x-app-layout :assets="$assets ?? []" :title="$title ?? []" :isBanner="true"/>
 <div class="row">
    <div class="col-lg-12">
        <div class="">
