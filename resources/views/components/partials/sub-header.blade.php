@@ -1,3 +1,6 @@
+<x-app-layout :title="$title" :assets="$assets ?? []" :isBanner="true">
+</x-app-layout>
+
 @props(['dir', 'title', 'isNavbar', 'isTour'])
 <div class="iq-navbar-header" style="height: 215px;">
     <div class="container-fluid iq-container">
