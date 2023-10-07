@@ -94,6 +94,40 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
+             public function blackwaterfoot(Request $request): View
+    {
+        $title = "Blackwaterfoot Long Range Forecast";
+        return view('wx.brodick', compact('title'));
+        
+    }
+             public function corrie(Request $request): View
+    {
+        $title = "Corrie Long Range Forecast";
+        
+        return view('wx.brodick', compact('title'));
+        
+    }
+             public function dougarie(Request $request): View
+    {
+        $title = "Dougarie Long Range Forecast";
+        //$location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+             public function lamlash(Request $request): View
+    {
+        $title = "Lamlash Long Range Forecast";
+      //  $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+             public function goatfell(Request $request): View
+    {
+        $title = "Goatfell Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
      
     public function billing(Request $request): View
     {
