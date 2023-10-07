@@ -39,7 +39,7 @@ class HomeController extends Controller
     {
         $title = 'Arran Webcams2';
         $assets = ['chart', 'animation'];
-        return view('arran-webcams', compact('assets','title'));
+        return view('arran-webcams', compact('title','assets'));
     }
             public function quake(Request $request): View
     {
