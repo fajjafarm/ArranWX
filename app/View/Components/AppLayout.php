@@ -20,7 +20,7 @@ class AppLayout extends Component
 
     public $modalJs;
 
-    public function __construct($layout = '', $title= false, $assets = [], $modalJs = false, $isBanner = false, $isSidebar = true, $isNavbar = true, $isPageContainer = true, $isTour = false, $isMasonry = false, $isFlatpickr = false, $isVectorMap = false, $isFslightbox = false, $isSweetalert = false, $isChoisejs = false, $isSelect2 = false, $isFormWizard = false, $isQuillEditor = false, $isCircleProgress = false, $isNoUISlider = false, $isSignaturePad = false, $isUppy = false, $isSwiperSlider = false, $isCropperjs = false, $isBarRatting = false, $isPrism = false, $isBtnHover = false ,$isTreeView = false)
+    public function __construct($layout = '', $title= true, $assets = [], $modalJs = false, $isBanner = false, $isSidebar = true, $isNavbar = true, $isPageContainer = true, $isTour = false, $isMasonry = false, $isFlatpickr = false, $isVectorMap = false, $isFslightbox = false, $isSweetalert = false, $isChoisejs = false, $isSelect2 = false, $isFormWizard = false, $isQuillEditor = false, $isCircleProgress = false, $isNoUISlider = false, $isSignaturePad = false, $isUppy = false, $isSwiperSlider = false, $isCropperjs = false, $isBarRatting = false, $isPrism = false, $isBtnHover = false ,$isTreeView = false)
     {
         // Setting Object
         // Cache::flush('layout_setting');
