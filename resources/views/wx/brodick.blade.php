@@ -42,6 +42,7 @@ $location =''; ?>
        // $json = \File::json('ferryforecast.json');
 //$json = file_get_contents("https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=55.5751&lon=-5.1452&altitude=0");
 //$json = Storage::url('brodick.json');
+echo '$location';
 echo $location;
 $json =Storage::get('brodick.json');
 
