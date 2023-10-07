@@ -44,10 +44,6 @@ $location =''; ?>
 //$json = Storage::url('brodick.json');
 
 $location = strtok($title, " ");
-$text = strtolower(htmlentities($location)); 
-    $text = str_replace(get_html_translation_table(), "-", $text);
-    $text = str_replace(" ", "-", $text);
-    $location = preg_replace("/[-]+/i", "-", $text);
 $location = strtolower ($location);
 $json =Storage::get($location.'json');
 
