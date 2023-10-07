@@ -38,7 +38,7 @@ class HomeController extends Controller
   
         public function arranwebcams(Request $request): View
     {
-        $title = 'Arran Webcams2';
+        $title = "Arran Webcams";
         $assets = ['chart', 'animation'];
         return view('arran-webcams', compact('title','assets'));
     }
