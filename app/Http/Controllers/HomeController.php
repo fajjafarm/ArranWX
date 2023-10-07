@@ -35,12 +35,7 @@ class HomeController extends Controller
         return view('wx.ferryforecast', compact('title','description','assets'));
     }
     
-        public function subhead(Request $request): View
-    {
-        
-        return view('components.partials.sub-header-blade', compact('title','description','assets'));
-    }
-    
+  
         public function arranwebcams(Request $request): View
     {
         $title = 'Arran Webcams2';
