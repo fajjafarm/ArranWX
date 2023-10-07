@@ -49,7 +49,7 @@ echo $location;
 $location = $location.'.json';
 echo $location;
 $json =Storage::get($location);
-
+print_r($json);
 $data = json_decode($json, true);
 $i = 0;
 $count= count($data['properties']['timeseries']);
