@@ -163,7 +163,7 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
-                 public function catcol(Request $request): View
+                 public function catacol(Request $request): View
     {
         $title = "Catacol Long Range Forecast";
      //   $location = "Brodick";
