@@ -1,4 +1,4 @@
-<x-app-layout title='Arran Webcams' :assets="$assets ?? []" :isBanner="true">
+<x-app-layout :assets="$assets ?? []" :isBanner="true">
 
 <div class="bd-example">
             <div class="row  row-cols-1 row-cols-md-2 g-4">
