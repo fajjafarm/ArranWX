@@ -46,7 +46,7 @@ $location =''; ?>
 $location = strtok($title, " ");
 $location = strtolower ($location);
 echo $location;
-$json =Storage::get($location.'json');
+$json =Storage::get('brodick.json');
 
 $data = json_decode($json, true);
 $i = 0;
