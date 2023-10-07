@@ -45,6 +45,7 @@ $location =''; ?>
 
 $location = strtok($title, " ");
 $location = strtolower ($location);
+echo $location;
 $json =Storage::get($location.'json');
 
 $data = json_decode($json, true);
