@@ -1,3 +1,4 @@
+<x-layout :title="$title">
 @props(['dir', 'title', 'isNavbar', 'isTour'])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr">
