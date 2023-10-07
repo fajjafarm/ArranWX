@@ -48,8 +48,8 @@ $location = strtolower ($location);
 echo $location;
 $location = $location.'.json';
 echo $location;
-$json =Storage::get($location);
-print_r($json);
+$json =Storage::get('brodick.json');
+
 $data = json_decode($json, true);
 $i = 0;
 $count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
