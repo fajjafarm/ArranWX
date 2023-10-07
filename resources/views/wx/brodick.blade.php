@@ -52,7 +52,8 @@ $json =Storage::get($location);
 print_r($json);
 $data = json_decode($json, true);
 $i = 2;
-$count= count($data['properties']['timeseries']);
+$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
+//$count= count($data['properties']['timeseries']);
 $count = $count-2;
 
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
