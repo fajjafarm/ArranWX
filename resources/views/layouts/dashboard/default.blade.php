@@ -38,7 +38,7 @@
 
             @if ($isBanner)
                 <!-- Header Banner Start-->
-                <x-partials.sub-header :title="$title ?? []"/>
+                <x-partials.sub-header :title="$title ?? []" :description="$description ?? []"/>
                 <!-- Header Banner End-->
             @endif
         </div>
