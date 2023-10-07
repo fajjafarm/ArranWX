@@ -6,7 +6,7 @@ $urlfetch = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.
 
 
 
-<x-app-layout :assets="$assets ?? []" :title="$title ?? []" :location="$location" :isBanner="true">
+<x-app-layout :assets="$assets ?? []" :title="$title ?? []" :location="$location ?? []" :isBanner="true">
 <div class="row">
    <div class="col-lg-12">
        <div class="">
@@ -15,7 +15,7 @@ $urlfetch = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                           <td colspan="11"><strong>{{ isset($title) ? $title : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
+                           <td colspan="11"><strong>{{ isset($location) ? $location : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
                                 <td >Weather</td>                                                              
