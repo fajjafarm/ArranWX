@@ -177,20 +177,7 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
-                 public function goatfell(Request $request): View
-    {
-        $title = "Goatfell Long Range Forecast";
-     //   $location = "Brodick";
-        return view('wx.brodick', compact('title'));
-        
-    }
-                 public function goatfell(Request $request): View
-    {
-        $title = "Goatfell Long Range Forecast";
-     //   $location = "Brodick";
-        return view('wx.brodick', compact('title'));
-        
-    }
+
      
     public function billing(Request $request): View
     {
