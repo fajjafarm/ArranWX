@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12"><h3>{{ isset($title) ? $title : config('app.name', 'Laravel') }}</h3>
 <h5>{{ isset($description) ? implode($description)  : config('app.name', 'Laravel') }}</h5>
-   <div class="d-flex  align-items-center flex-wrap">
+   <div class="align-items-center ">
                     <div><?php 
                     $floodstatus ='';
                     $flood = '   <div class="alert alert-success  mt-3" role="alert">
