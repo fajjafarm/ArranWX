@@ -61,10 +61,19 @@ Route::group(['prefix' => 'Forecasts'], function() {
     //Example Page Routs
     Route::get('Brodick', [HomeController::class, 'brodick'])->name('brodick');
     Route::get('Corrie', [HomeController::class, 'corrie'])->name('corrie');
-    Route::get('Dougarie', [HomeController::class, 'dougarie'])->name('special-pages.kanban');
-    Route::get('Lamlash', [HomeController::class, 'lamlash'])->name('special-pages.pricing');
-    Route::get('Sannox', [HomeController::class, 'sannox'])->name('special-pages.rtlsupport');
-    Route::get('Whiting Bay', [HomeController::class, 'whitingbay'])->name('special-pages.timeline');
+    Route::get('Dougarie', [HomeController::class, 'dougarie'])->name('dougarie');
+    Route::get('Lamlash', [HomeController::class, 'lamlash'])->name('lamlash');
+    Route::get('Sannox', [HomeController::class, 'sannox'])->name('sannox');
+    Route::get('Whiting Bay', [HomeController::class, 'whitingbay'])->name('whitingbay');
+    Route::get('Shiskine', [HomeController::class, 'shiskine'])->name('shiskine');
+    Route::get('Kilmory', [HomeController::class, 'kilmory'])->name('kilmory');
+    Route::get('Kildonnan', [HomeController::class, 'kildonnan'])->name('kildonnan');
+    Route::get('Pirnmill', [HomeController::class, 'pirnmill'])->name('pirnmill');
+    Route::get('Goatfell', [HomeController::class, 'goatfell'])->name('goatfell');
+    Route::get('Catacol', [HomeController::class, 'catacol'])->name('catacol');
+    Route::get('Lochranza', [HomeController::class, 'lochranza'])->name('lochranza');
+    Route::get('Lagg', [HomeController::class, 'lagg'])->name('lagg');
+    Route::get('Sannox', [HomeController::class, 'sannox'])->name('sannox');
 });
 
 

@@ -128,6 +128,69 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
+                 public function kildonnan(Request $request): View
+    {
+        $title = "Kildonnan Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function kilmory(Request $request): View
+    {
+        $title = "Kilmory Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function lagg(Request $request): View
+    {
+        $title = "Lagg Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function whitingbay(Request $request): View
+    {
+        $title = "Whiting-Bay Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function pirnmill(Request $request): View
+    {
+        $title = "Pirnmill Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function catcaol(Request $request): View
+    {
+        $title = "Catacol Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function shiskine(Request $request): View
+    {
+        $title = "Shiskine Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function goatfell(Request $request): View
+    {
+        $title = "Goatfell Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
+                 public function goatfell(Request $request): View
+    {
+        $title = "Goatfell Long Range Forecast";
+     //   $location = "Brodick";
+        return view('wx.brodick', compact('title'));
+        
+    }
      
     public function billing(Request $request): View
     {
