@@ -1,7 +1,7 @@
 <div class="iq-navbar-header" style="height: 215px;">
     <div class="container-fluid iq-container">
         <div class="row">
-            <div class="col-md-12"><h3>{{ isset($title) ? $title . ' - ' . config('app.name', 'Laravel') : config('app.name', 'Laravel') }}</h3>
+            <div class="col-md-12"><h3>{{ isset($title) ? $title : config('app.name', 'Laravel') }}</h3>
 <h5>{{ isset($description) ? implode($description)  : config('app.name', 'Laravel') }}</h5>
    <div class="d-flex  align-items-center flex-wrap">
                     <div><?php 
