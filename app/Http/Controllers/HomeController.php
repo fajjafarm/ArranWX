@@ -177,13 +177,7 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
-                     public function lamlash(Request $request): View
-    {
-        $title = "Lamlash Long Range Forecast";
-     //   $location = "Brodick";
-        return view('wx.brodick', compact('title'));
-        
-    }
+
 
      
     public function billing(Request $request): View

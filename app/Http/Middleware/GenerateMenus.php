@@ -88,7 +88,7 @@ $menu_style = $this->parentMenu($menu, [
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'ls',
                 'title' => 'Lamlash',
-                'route' => 'lamlashl'
+                'route' => 'lamlash'
             ]);
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'lo',
