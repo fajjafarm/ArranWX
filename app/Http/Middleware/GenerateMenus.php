@@ -68,7 +68,7 @@ $menu_style = $this->parentMenu($menu, [
             $this->childMain($menu_style, [
                 'shortTitle' => 'bf',
                 'title' => 'catacol',
-                'route' => 'menu-style.horizontal'
+                'route' => 'catacol'
             ]);
             $this->childMain($menu_style, [
                 'shortTitle' => 'br',
@@ -83,62 +83,62 @@ $menu_style = $this->parentMenu($menu, [
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'do',
                 'title' => 'Dougarie',
-                'route' => 'menu-style.horizontal'
+                'route' => 'dougarie'
             ]);
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'ls',
                 'title' => 'Lamlash',
-                'route' => 'menu-style.horizontal'
+                'route' => 'lamlashl'
             ]);
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'lo',
                 'title' => 'Lochranza',
-                'route' => 'menu-style.horizontal'
+                'route' => 'lochranza'
             ]);
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'sa',
                 'title' => 'Sannox',
-                'route' => 'menu-style.horizontal'
+                'route' => 'sannox'
             ]);
                                     $this->childMain($menu_style, [
                 'shortTitle' => 'sh',
                 'title' => 'Shiskine',
-                'route' => 'menu-style.horizontal'
+                'route' => 'shiskine'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'ca',
                 'title' => 'Catacol',
-                'route' => 'menu-style.horizontal'
+                'route' => 'catacol'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'pr',
                 'title' => 'Pirnmill',
-                'route' => 'menu-style.horizontal'
+                'route' => 'pirnmill'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'wb',
                 'title' => 'Whiting Bay',
-                'route' => 'menu-style.horizontal'
+                'route' => 'whitingbay'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'kd',
                 'title' => 'Kildonnan',
-                'route' => 'menu-style.horizontal'
+                'route' => 'kildonnan'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'km',
                 'title' => 'Kilmory',
-                'route' => 'menu-style.horizontal'
+                'route' => 'kilmory'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'gf',
                 'title' => 'Goatfell',
-                'route' => 'menu-style.horizontal'
+                'route' => 'goatfell'
             ]);
                                                 $this->childMain($menu_style, [
                 'shortTitle' => 'lg',
                 'title' => 'Lagg',
-                'route' => 'menu-style.horizontal'
+                'route' => 'lagg'
             ]);
             
 //webcam
