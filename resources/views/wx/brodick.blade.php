@@ -48,7 +48,7 @@ $location = strtolower ($location);
 echo $location;
 $location = $location.'.json';
 echo $location;
-$json =Storage::get($location);
+$json =Storage::get('lochranza.json');
 
 $data = json_decode($json, true);
 $i = 0;
