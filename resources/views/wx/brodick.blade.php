@@ -39,7 +39,7 @@ $i = 0;
 $count= count($data['properties']['timeseries']);
 $count = $count-2;
 
-$datar = implode($data['geometry']['coordinates']);
+$datar = implode(" ",$data['geometry']['coordinates']);
 
 
 ?>
