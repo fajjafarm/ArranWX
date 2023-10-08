@@ -14,24 +14,7 @@ $location =''; ?>
        <div class="">
            <div class="card-body">
                 <div class="fancy-table table-responsive rounded">
-                                    <table class="table table-striped mb-0">
-                        <thead>
-                           <tr class="table-dark">
-                           <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $lat; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
-                           </tr><tr class="table-dark">
-                               <td >Today</td>
-                                <td >Weather</td>                                                              
-                                   <td >Temp.</td>
-                                       <td >Avg. Wind</td>
-                                           <td >Gust</td>
-                                               <td >Dir</td>
-                                                   <td >From</td>
-                                                   <td >Rain</td>
-                                                      <td >UV</td>
-                                                           <td >Fog</td>
-                                                           <td >Humidity&nbsp;&nbsp; </td></tr>
-                        </thead>
-                        <tbody>
+
                        
                 
                 <?php
@@ -56,6 +39,29 @@ $i = 0;
 $count= count($data['properties']['timeseries']);
 $count = $count-2;
 
+$datar = implode($data['geometry']['coordinates']);
+
+
+?>
+
+                                    <table class="table table-striped mb-0">
+                        <thead>
+                           <tr class="table-dark">
+                           <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $datar; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
+                           </tr><tr class="table-dark">
+                               <td >Today</td>
+                                <td >Weather</td>                                                              
+                                   <td >Temp.</td>
+                                       <td >Avg. Wind</td>
+                                           <td >Gust</td>
+                                               <td >Dir</td>
+                                                   <td >From</td>
+                                                   <td >Rain</td>
+                                                      <td >UV</td>
+                                                           <td >Fog</td>
+                                                           <td >Humidity&nbsp;&nbsp; </td></tr>
+                        </thead>
+                        <tbody><?php
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
 
 for ($i = 0; $i <= $count; $i++){
