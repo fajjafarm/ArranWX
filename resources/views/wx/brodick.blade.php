@@ -39,7 +39,7 @@ $i = 0;
 $count= count($data['properties']['timeseries']);
 $count = $count-2;
 
-$datar = implode(" ",$data['geometry']['coordinates']);
+$datar = implode(" ",$data['geometry']['coordinates'][2]);
 
 
 ?>
@@ -47,7 +47,7 @@ $datar = implode(" ",$data['geometry']['coordinates']);
                                     <table class="table table-striped mb-0">
                         <thead>
                            <tr class="table-dark">
-                           <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $datar; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $alt; ?>m</td>
+                           <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $datar; ?> | lon: <?php echo $lon; ?> | alt: <?php echo $data['geometry']['coordinates'][2]; ?>m</td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
                                 <td >Weather</td>                                                              
