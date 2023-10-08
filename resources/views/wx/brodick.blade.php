@@ -28,9 +28,9 @@ $location =''; ?>
 
 $location = strtok($title, " ");
 $location = strtolower ($location);
-echo $location;
+//echo $location;
 $location = $location.'.json';
-echo $location;
+//echo $location;
 $json =Storage::get($location);
 
 $data = json_decode($json, true);
