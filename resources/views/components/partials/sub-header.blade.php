@@ -16,7 +16,7 @@
 $data = json_decode($json, true);
 
 $i = 1;
-if !empty(count($data['channel']['item'])){
+if (empty(count($data['channel']['item']))){
 
 $count= count($data['channel']['item']);
 $count= $count-1;
