@@ -16,8 +16,7 @@
 $data = json_decode($json, true);
 
 $i = 1;
-$wxwarn = $data['channel']['item'];
-if (!empty($wxwarn)){
+if (empty(count($data['channel']['item']))){
 
 $count= count($data['channel']['item']);
 $count= $count-1;
@@ -62,7 +61,8 @@ echo $flood;?>
 $data = json_decode($json, true);
 
 $i = 1;
-if (empty(count($data['channel']['item']))){
+$warnwx = $data['channel']['item'];
+if (!empty($warnwx)){
 $count= count($data['channel']['item']);
 $count= $count-1;
           for ($i = 1; $i <= $count; $i++){ 
