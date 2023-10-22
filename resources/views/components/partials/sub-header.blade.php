@@ -63,8 +63,8 @@ $data = json_decode($json, true);
 $i = 1;
 $warnwx = $data['channel']['item'];
 print_r($warnwx);
-if (!empty($warnwx)){
-  echo 'not empty';}
+if (isset($warnwx)){
+  echo $data['channel']['item'][$i]['title'];}
 
 // if (!empty($warnwx)){
 // $count= count($data['channel']['item']);
