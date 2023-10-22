@@ -65,7 +65,7 @@ $warnwx = $data['channel']['item'];
 print_r($warnwx);
 if (isset($warnwx)){
   echo $data['channel']['item'][1]['title'];
-//}
+}
 
 // if (!empty($warnwx)){
 // $count= count($data['channel']['item']);
