@@ -61,10 +61,10 @@ echo $flood;?>
 $data = json_decode($json, true);
 
 $i = 0;
-$warnwx = $data['channel']['item'];
+$warnwx = $data['channel']['item']['title'];
 print_r($warnwx);
 if (isset($warnwx)){
- // echo $data['channel']['item'][0]['title'];
+  echo $data['channel']['item']['title'];
 }
 
 // if (!empty($warnwx)){
