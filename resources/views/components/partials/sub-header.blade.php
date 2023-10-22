@@ -60,7 +60,7 @@ echo $flood;?>
 
 $data = json_decode($json, true);
 
-$i = 1;
+$i = 0;
 $warnwx = $data['channel']['item'];
 print_r($warnwx);
 if (isset($warnwx)){
