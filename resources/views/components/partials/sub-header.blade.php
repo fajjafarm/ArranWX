@@ -62,7 +62,7 @@ $data = json_decode($json, true);
 
 $i = 1;
 $warnwx = $data['channel']['item'];
-
+print_r($warnwx);
 if (!empty($warnwx)){
   echo 'not empty';}
 
