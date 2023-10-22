@@ -64,7 +64,7 @@ $i = 0;
 $warnwx = $data['channel']['item'];
 print_r($warnwx);
 if (isset($warnwx)){
-  echo $data['channel']['item'][0]['title'];
+ // echo $data['channel']['item'][0]['title'];
 }
 
 // if (!empty($warnwx)){
