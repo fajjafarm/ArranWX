@@ -282,10 +282,10 @@ $sym = '<img src="../images/weathersymbols/'.$symbol. '.svg" width="50" height="
 if ($symbol == ''){
     $sym ='&nbsp;';
 }
-if (!isset($bg1)){
-    $bg1 = $bg2;
-
-};
+//if (!isset($bg1)){
+//    $bg1 = $bg2;
+//
+//};
 $bg2 = '';
 
 
