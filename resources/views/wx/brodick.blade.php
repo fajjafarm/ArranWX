@@ -342,7 +342,7 @@ $bgcol0 = $bgcol;
 $bgcol0c = $bgcolc;
 $symbol ='';
 $fog ='';
-$bg1 = $bg2;
+//$bg1 = $bg2;
 //echo ($data['properties']['timeseries'][$i]['time']);
 }
 //echo "<pre>";
