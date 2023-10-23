@@ -7,7 +7,7 @@ $bgcol0 ='';
 $bgcol='';
 $bgcol0c = '';
 $bgcolc='';
-$wind_gust='';
+$wind_gust=0;
 $location =''; ?>
 
 
