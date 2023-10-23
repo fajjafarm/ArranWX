@@ -32,7 +32,7 @@ $location = strtolower ($location);
 $location = $location.'.json';
 //echo $location;
 $json =Storage::get($location);
-
+$count='';
 $data = json_decode($json, true);
 $i = 0;
 //$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
