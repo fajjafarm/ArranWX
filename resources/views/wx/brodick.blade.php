@@ -34,7 +34,7 @@ $location = $location.'.json';
 $json =Storage::get($location);
 $count='';
 $data = json_decode($json, true);
-print("<pre>".print_r($data,true)."</pre>");
+//print("<pre>".print_r($data,true)."</pre>");
 $i = 0;
 //$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
 //$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
