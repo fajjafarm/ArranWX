@@ -44,7 +44,7 @@ if( isset( $data['properties']['timeseries'] ) ){
  else { echo'forecast error';}
 
 //$count= count($data['properties']['timeseries']);
-$count = $count-2;
+//$count = $count-2;
 //
 //$datar = implode(" ",$data['geometry']['coordinates']);
 
