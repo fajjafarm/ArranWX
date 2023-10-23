@@ -55,7 +55,7 @@ $datar = implode(" ",$data['geometry']['coordinates']);
 
 ?>
 
-                                    <table class="table table-striped mb-0">
+                                    <table class="table table-striped mb-0" style="height:fit-content">
                         <thead>
                            <tr class="table-dark">
                            <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $data['geometry']['coordinates'][1]; ?> | lon: <?php echo $data['geometry']['coordinates'][0]; ?> | alt: <?php echo $data['geometry']['coordinates'][2]; ?>m</td>
