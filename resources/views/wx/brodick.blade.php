@@ -37,7 +37,7 @@ $data = json_decode($json, true);
 $i = 0;
 //$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
 //$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
-if( isset( $data['properties']['timeseries'] ) ){
+if( !isset( $data['properties']['timeseries'] ) ){
     $count= count($data['properties']['timeseries']);
     $count = $count-2;
  }
