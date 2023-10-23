@@ -16,9 +16,9 @@
 $data = json_decode($json, true);
 
 $i = 1;
-if (empty(count($data['channel']['item']))){
-
-$count= count($data['channel']['item']);
+//if (empty(count($data['channel']['item']))){
+  if( isset( $data['channel']['item']['title'] ) ){
+//$count= count($data['channel']['item']);
 $count= $count-1;
           for ($i = 1; $i <= $count; $i++){ 
             if (str_contains($data['channel']['item'][$i]['title'], 'Arran')){
@@ -61,9 +61,10 @@ echo $flood;?>
 $data = json_decode($json, true);
 
 $i = 0;
-$warnwx = $data['channel']['item']['title'];
+//$warnwx = $data['channel']['item']['title'];
+if( isset( $data['channel']['item']['title'] ) ){
 //print_r($warnwx);
-if (isset($warnwx)){
+//if (isset($warnwx)){
  // echo $data['channel']['item']['title'];
 
 
