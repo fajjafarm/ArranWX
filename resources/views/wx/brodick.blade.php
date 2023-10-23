@@ -291,6 +291,50 @@ if ($symbol == ''){
 //};
 $bg2 = '';
 
+if ((round($wind_gust)<1)){
+
+	$bgcolgust = '';
+	$txcolgust = 'color:#000000';
+	
+	}
+$wind_gust =$gust;
+if ((round($wind_gust)>=1 && (round($wind_gust) < 4))){
+
+	$bgcolgust = '#CCFFFF';
+	$txcolgust = 'color:#000000';}
+if ((round($wind_gust)>=4 && (round($wind_gust) < 8))){
+
+	$bgcolgust = '#00FFFF';
+	$txcolgust = 'color:#000000';}
+	
+if ((round($wind_gust)>=8 && (round($wind_gust) < 13))){
+
+	$bgcolgust = '#7FFF7F';
+	$txcolgust = 'color:#000000';}
+	
+if ((round($wind_gust)>=13 && (round($wind_gust) < 18))){
+
+	$bgcolgust = '#00FF00';
+	$txcolgust = 'color:#000000';}	
+if ((round($wind_gust)>=18 && (round($wind_gust) < 25))){
+
+	$bgcolgust = '#7FFF00';
+	$txcolgust = 'color:#000000';}	
+if ((round($wind_gust)>=25 && (round($wind_gust) < 31))){
+
+	$bgcolgust = '#FFFF00';
+	$txcolgust = 'color:#000000';}	
+if ((round($wind_gust)>=31 && (round($wind_gust) < 39))){
+
+	$bgcolgust = '#FFD42A';
+	$txcolgust = 'color:#000000';}
+		
+if (!isset($bgcolgust0)) {
+$bgcolgust0=$bgcolgust;
+	}
+$bggradgust = 'background-image: linear-gradient(180deg, '.$bgcolgust0.', '.$bgcolgust.');';
+
+$bgcolgust0=$bgcolgust;
 
 $timee = $data['properties']['timeseries'][$i]['time'];
 $timeedt =new DateTime($timee);
@@ -317,7 +361,7 @@ if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['r
 }
 
 if ($time == '00:00'){
-    echo '<thead><tr >
+    echo '<thead><tr class="table-dark">
                 <td colspan ="2">'.$day.'</td>                                   <td >Temp.</td>
                                        <td >Avg. Wind</td>
                                            <td >Gust</td>
@@ -333,7 +377,7 @@ echo ' <td>'.$time. '</td>';
 echo ' <td class="text-dark">'.$sym.'</td>';
 echo ' <td class="text-dark">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). '&degC</td>';
 echo ' <td class="text-dark" style="'.$bggrad.'">'.$wind. ' mph</td>';
-echo ' <td class="text-dark" >'.$gust. ' mph*</td>';
+echo ' <td class="text-dark" style="'.$bggradgust.'">'.$gust. ' mph*</td>';
 echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" transform="rotate('.$rotate.')"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg> </td>';
 echo ' <td class="text-dark"> '.$dirn. '</td>';
 echo ' <td class="text-dark"> '.$rain.'mm</td>';
