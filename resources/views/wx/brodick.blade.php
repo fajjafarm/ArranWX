@@ -273,10 +273,10 @@ $updatetimeedt =new DateTime($updatetimee);
 $day2 = $updatetimeedt->format('l jS F');
 $dayy2 = $updatetimeedt->format('d');
 $time2 = $updatetimeedt->format('H:i');
-  }  ?>
+    ?>
                 
             <thead>    <tr class="table-dark">
-                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $time2.' '.$dayy2.' '.$day2;?> </td>
+                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $time2.' '.$dayy2.' '.$day2;}?> </td>
                            </tr></thead>
                 
 
