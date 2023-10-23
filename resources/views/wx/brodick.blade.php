@@ -124,6 +124,78 @@ $dirn = 'NW'; }
 if (($rotate >= 326.25) && ($rotate < 348.75)){
 $dirn = 'NNW'; }
 
+//wind gradient
+$wind_speed =$wind;
+if ((round($wind_speed)<1)){
+
+	$bgcol = '#FFFFFF';
+	$txcol = 'color:#FFFFFF';
+	
+	}
+
+if ((round($wind_speed)>=1 && (round($wind_speed) < 4))){
+
+	$bgcol = '#CCFFFF';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=4 && (round($wind_speed) < 8))){
+
+	$bgcol = '#00FFFF';
+	$txcol = 'color:#000000';}
+	
+if ((round($wind_speed)>=8 && (round($wind_speed) < 13))){
+
+	$bgcol = '#7FFF7F';
+	$txcol = 'color:#000000';}
+	
+if ((round($wind_speed)>=13 && (round($wind_speed) < 18))){
+
+	$bgcol = '#00FF00';
+	$txcol = 'color:#000000';}	
+if ((round($wind_speed)>=18 && (round($wind_speed) < 25))){
+
+	$bgcol = '#7FFF00';
+	$txcol = 'color:#000000';}	
+if ((round($wind_speed)>=25 && (round($wind_speed) < 31))){
+
+	$bgcol = '#FFFF00';
+	$txcol = 'color:#000000';}	
+if ((round($wind_speed)>=31 && (round($wind_speed) < 39))){
+
+	$bgcol = '#FFD42A';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=39 && (round($wind_speed) < 46))){
+
+	$bgcol = '#FFCC00';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=46 && (round($wind_speed) < 54))){
+
+	$bgcol = '#FF9900';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=55 && (round($wind_speed) < 63))){
+
+	$bgcol = '#993300';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=63 && (round($wind_speed) < 72))){
+
+	$bgcol = '#993366';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=72 )){
+
+	$bgcol = '#FFD42A';
+	$txcol = 'color:#000000';}
+	
+	
+	
+	
+		
+if (!isset($bgcol0)) {
+$bgcol0=	$bgcol;
+	}
+$bggrad = 'background-image: linear-gradient(180deg, '.$bgcol0.', '.$bgcol.');';
+
+
+
+
 //disruption status
 $portt = '';
 
@@ -210,7 +282,11 @@ $sym = '<img src="../images/weathersymbols/'.$symbol. '.svg" width="50" height="
 if ($symbol == ''){
     $sym ='&nbsp;';
 }
+if (!isset($bg1)){
+    $bg1 = $bg2;
 
+};
+$bg2 = '';
 
 
 $timee = $data['properties']['timeseries'][$i]['time'];
@@ -253,8 +329,8 @@ echo '<tr>';
 echo ' <td>'.$time. '</td>';
 echo ' <td class="text-dark">'.$sym.'</td>';
 echo ' <td class="text-dark">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). '&degC</td>';
-echo ' <td class="text-dark">'.$wind. ' mph</td>';
-echo ' <td class="text-dark">'.$gust. ' mph*</td>';
+echo ' <td class="text-dark" >'.$wind. ' mph</td>';
+echo ' <td class="text-dark" style="'.$bggradgust.'">'.$gust. ' mph*</td>';
 echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" transform="rotate('.$rotate.')"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg> </td>';
 echo ' <td class="text-dark"> '.$dirn. '</td>';
 echo ' <td class="text-dark"> '.$rain.'mm</td>';
@@ -262,8 +338,11 @@ echo ' <td class="text-dark"> '.$uv. '</td>';
 echo ' <td class="text-dark"> '.$fog.'%</td>';
 echo ' <td class="text-dark">'.$hum.'%</td>';
 echo '</tr>';
+$bgcol0 = $bgcol;
+$bgcol0c = $bgcolc;
 $symbol ='';
 $fog ='';
+$bg1 = $bg2;
 //echo ($data['properties']['timeseries'][$i]['time']);
 }
 //echo "<pre>";
