@@ -163,7 +163,7 @@ if ((round($tempa)>=3 && (round($tempa) < 5))){
                                         $txcoltempa = 'color:#000000';} 
 
 
-                                        if (!isset($bgcol0)) {
+                                        if (!isset($bgcoltempa0)) {
                                             $bgcoltempa0=	$bgcoltempa;
                                                 }
                                             $bggradtempa = 'background-image: linear-gradient(180deg, '.$bgcoltempa0.', '.$bgcoltempa.');';
