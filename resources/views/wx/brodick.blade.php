@@ -9,7 +9,7 @@ $bgcol0c = '';
 $bgcolc='';
 $wind_gust=0;
 $location =''; 
-$precipitation_amount = 0;
+$precipitation_amount = 0;?>
 
 
 <x-app-layout :assets="$assets ?? []" :title="$title ?? []" :location="$location" :isBanner="true">
