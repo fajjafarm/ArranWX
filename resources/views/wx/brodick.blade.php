@@ -353,9 +353,9 @@ if (!isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['detail
 $precipitation_amount = $rain;
 $precipb = ($precipitation_amount/5);
 if ($precipitation_amount>2){
-	$rpcolor = 'color:#cccccd;';
+	$rpcolor = 'color:#000000;';
 }else{
-		$rpcolor = 'color:#0000FF;';
+		$rpcolor = 'color:#000000;';
 }
 if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'])){
     $uv= $data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'];
@@ -387,7 +387,7 @@ echo ' <td class="text-dark" style="height: 100%"><div style=" margin: auto; hei
 echo ' <td class="text-dark" style="height: 100%"><div style="vertical-align:middle; height: 100%; width: 100%; '.$bggradgust.'; ">'.$gust. ' mph*</div></td>';
 echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" transform="rotate('.$rotate.')"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg> </td>';
 echo ' <td class="text-dark"> '.$dirn. '</td>';
-echo ' <td class="text-dark" style="height: 100%"><div style="text-align: center;background-color:rgba(0, 0,255, '.$precipb.');'.$rpcolor.'""> '.$rain.'mm </div></td>';
+echo ' <td class="text-dark" style="height: 100%"><div style="text-align: center;background-color:rgba(0, 0,255, '.$precipb.');'.$rpcolor.'""> '.$rain.' mm </div></td>';
 echo ' <td class="text-dark"> '.$uv. '</td>';
 echo ' <td class="text-dark"> '.$fog.'%</td>';
 echo ' <td class="text-dark">'.$hum.'%</td>';
