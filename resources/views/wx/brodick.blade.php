@@ -485,6 +485,7 @@ echo ' <td class="text-dark">'.$hum.'%</td>';
 echo '</tr>';
 $bgcol0 = $bgcol;
 $bgcol0c = $bgcolc;
+$bgcoltempa0=	$bgcoltempa;
 $symbol ='';
 $fog ='';
 //$bg1 = $bg2;
