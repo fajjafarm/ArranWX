@@ -353,7 +353,7 @@ if (!isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['detail
 $precipitation_amount = $rain;
 $precipb = ($precipitation_amount/5);
 if ($precipitation_amount>2){
-	$rpcolor = 'color:#ffffff;';
+	$rpcolor = 'color:#cccccc;';
 }else{
 		$rpcolor = 'color:#0000FF;';
 }
