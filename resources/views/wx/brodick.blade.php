@@ -91,6 +91,92 @@ if ($wvht <=0.5 ){$wvht = 'calm';}else
 $wvht = $wvht.'ft';
 $rotate = $data['properties']['timeseries'][$i]['data']['instant']['details']['wind_from_direction'];
 
+
+$tempa =$data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature'];
+if ((round($tempa)>=-20 && (round($tempa) < -7))){
+
+	$bgcoltempa = '#7C28C9';
+	$txcoltempa = 'color:#000000';}
+if ((round($tempa)>=-7 && (round($tempa) < -5))){
+
+	$bgcoltempa = '#5228C9';
+	$txcoltempa = 'color:#000000';}
+	
+if ((round($tempa)>=-5 && (round($tempa) < -3))){
+
+	$bgcoltempa = '#2F28C9';
+	$txcoltempa = 'color:#000000';}
+	
+if ((round($tempa)>=-3 && (round($tempa) < -1))){
+
+	$bgcoltempa = '#2852C9';
+	$txcoltempa = 'color:#000000';}	
+if ((round($tempa)>=-1 && (round($tempa) < 1))){
+
+	$bgcoltempa = '#2875C9';
+	$txcoltempa = 'color:#000000';}	
+if ((round($tempa)>=1 && (round($tempa) < 3))){
+
+	$bgcoltempa = '#4A97B9';
+	$txcoltempa = 'color:#000000';}	
+if ((round($tempa)>=3 && (round($tempa) < 5))){
+
+	$bgcoltempa = '#4AB9AF';
+	$txcoltempa = 'color:#000000';}
+    if ((round($tempa)>=5 && (round($tempa) < 7))){
+
+        $bgcoltempa = '#0E7F75';
+        $txcoltempa = 'color:#000000';}
+        if ((round($tempa)>=7 && (round($tempa) < 9))){
+
+            $bgcoltempa = '#0E7F3A';
+            $txcoltempa = 'color:#000000';}
+            if ((round($tempa)>=9 && (round($tempa) < 12))){
+
+                $bgcoltempa = '#557E53';
+                $txcoltempa = 'color:#000000';}
+                if ((round($tempa)>=12 && (round($tempa) < 15))){
+
+                    $bgcoltempa = '#88B114';
+                    $txcoltempa = 'color:#000000';}
+                    if ((round($tempa)>=15 && (round($tempa) < 18))){
+
+                        $bgcoltempa = '#FFD42A';
+                        $txcoltempa = 'color:#000000';}
+                        if ((round($tempa)>=18 && (round($tempa) < 22))){
+
+                            $bgcoltempa = '#AAB114';
+                            $txcoltempa = 'color:#000000';}
+                            if ((round($tempa)>=22 && (round($tempa) < 25))){
+
+                                $bgcoltempa = '#BB981C';
+                                $txcoltempa = 'color:#000000';}
+                                if ((round($tempa)>=25 && (round($tempa) < 30))){
+
+                                    $bgcoltempa = '#BB761C';
+                                    $txcoltempa = 'color:#000000';} 
+                                    if (round($tempa)>=30 ){
+
+                                        $bgcoltempa = '#BB531C';
+                                        $txcoltempa = 'color:#000000';} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Direction name
 $dirn = 'not set';
 if ($rotate < 11.25){
@@ -382,7 +468,7 @@ if ($time == '00:00'){
 echo '<tr style="height:100%">';
 echo ' <td>'.$time. '</td>';
 echo ' <td class="text-dark">'.$sym.'</td>';
-echo ' <td class="text-dark">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). '&degC</td>';
+echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggradtempa.'; ">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). ' &degC</div></td>';
 echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggrad.'; ">'.$wind. ' mph</div></td>';
 echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggradgust.'; ">'.$gust. ' mph*</div></td>';
 echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" transform="rotate('.$rotate.')"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg> </td>';
