@@ -186,7 +186,7 @@ $dayy = $timeedt->format('d');
 $time = $timeedt->format('H:i');
 if ($time == '00:00'){
     echo '<thead><tr class="table-dark">
-                <td >weather</td><td colspan ="2">'.$day.'</td>
+                <td colspan ="2">'.$day.'</td><td >weather</td>
                 <td >Temp.</td>
                                            <td >Avg. Wind</td>
                                                <td >Dir</td>
