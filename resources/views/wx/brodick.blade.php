@@ -141,12 +141,12 @@ if ((round($tempa)>=3 && (round($tempa) < 5))){
 
                             $bgcoltempa = '#fd7e14';
                             $txcoltempa = 'color:#000000';}
-                            if ((round($tempa)>=22 && (round($tempa) < 25))){
+                            if ((round($tempa)>=22 && (round($tempa) < 26))){
 
                                 $bgcoltempa = '#dc3545';
                                 $txcoltempa = 'color:#000000';}
              
-                                    if (round($tempa)>=25 ){
+                                    if (round($tempa)>=26 ){
 
                                         $bgcoltempa = '#d63384';
                                         $txcoltempa = 'color:#000000';} 
