@@ -97,42 +97,34 @@ $rotate = $data['properties']['timeseries'][$i]['data']['instant']['details']['w
 $tempa =$data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature'];
 if ((round($tempa)>=-20 && (round($tempa) < -7))){
 
-	$bgcoltempa = '#7C28C9';
+	$bgcoltempa = '#6610f2';
 	$txcoltempa = 'color:#000000';}
-if ((round($tempa)>=-7 && (round($tempa) < -5))){
+if ((round($tempa)>=-7 && (round($tempa) < -3))){
 
-	$bgcoltempa = '#5228C9';
-	$txcoltempa = 'color:#000000';}
-	
-if ((round($tempa)>=-5 && (round($tempa) < -3))){
-
-	$bgcoltempa = '#2F28C9';
+	$bgcoltempa = '#6f42c1';
 	$txcoltempa = 'color:#000000';}
 	
 if ((round($tempa)>=-3 && (round($tempa) < -1))){
 
-	$bgcoltempa = '#2852C9';
+	$bgcoltempa = '#0d6efd';
 	$txcoltempa = 'color:#000000';}	
 if ((round($tempa)>=-1 && (round($tempa) < 1))){
 
-	$bgcoltempa = '#2875C9';
+	$bgcoltempa = '#0dcaf0';
 	$txcoltempa = 'color:#000000';}	
 if ((round($tempa)>=1 && (round($tempa) < 3))){
 
-	$bgcoltempa = '#4A97B9';
+	$bgcoltempa = '#0dcaf0';
 	$txcoltempa = 'color:#000000';}	
 if ((round($tempa)>=3 && (round($tempa) < 5))){
 
-	$bgcoltempa = '#4AB9AF';
+	$bgcoltempa = '#20c997';
 	$txcoltempa = 'color:#000000';}
-    if ((round($tempa)>=5 && (round($tempa) < 7))){
+    if ((round($tempa)>=5 && (round($tempa) < 9))){
 
-        $bgcoltempa = '#0E7F75';
+        $bgcoltempa = '#198754';
         $txcoltempa = 'color:#000000';}
-        if ((round($tempa)>=7 && (round($tempa) < 9))){
-
-            $bgcoltempa = '#0E7F3A';
-            $txcoltempa = 'color:#000000';}
+        
             if ((round($tempa)>=9 && (round($tempa) < 12))){
 
                 $bgcoltempa = '#557E53';
@@ -143,23 +135,20 @@ if ((round($tempa)>=3 && (round($tempa) < 5))){
                     $txcoltempa = 'color:#000000';}
                     if ((round($tempa)>=15 && (round($tempa) < 18))){
 
-                        $bgcoltempa = '#FFD42A';
+                        $bgcoltempa = '#ffc107';
                         $txcoltempa = 'color:#000000';}
                         if ((round($tempa)>=18 && (round($tempa) < 22))){
 
-                            $bgcoltempa = '#AAB114';
+                            $bgcoltempa = '#fd7e14';
                             $txcoltempa = 'color:#000000';}
                             if ((round($tempa)>=22 && (round($tempa) < 25))){
 
-                                $bgcoltempa = '#BB981C';
+                                $bgcoltempa = '#dc3545';
                                 $txcoltempa = 'color:#000000';}
-                                if ((round($tempa)>=25 && (round($tempa) < 30))){
+             
+                                    if (round($tempa)>=25 ){
 
-                                    $bgcoltempa = '#BB761C';
-                                    $txcoltempa = 'color:#000000';} 
-                                    if (round($tempa)>=30 ){
-
-                                        $bgcoltempa = '#BB531C';
+                                        $bgcoltempa = '#d63384';
                                         $txcoltempa = 'color:#000000';} 
 
 
