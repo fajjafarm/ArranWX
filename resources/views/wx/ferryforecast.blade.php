@@ -134,28 +134,28 @@ if (($wind)>28){
 }
 }
 if ($dirn == "E"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>23){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
 }
 }
 if ($dirn == "NE"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>23){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
 }
 }
 if ($dirn == "ENE"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>23){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
 }
 }
 if ($dirn == "NNE"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>28){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
