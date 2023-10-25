@@ -14,9 +14,9 @@
 
 
 $data = json_decode($json, true);
-echo '<pre>';
-        print_r($data);
-        echo  '</pre>';
+//echo '<pre>';
+//        print_r($data);
+//        echo  '</pre>';
 
 $i = 0;
 //if (empty(count($data['channel']['item']))){
