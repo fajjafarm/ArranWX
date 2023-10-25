@@ -2,7 +2,7 @@
     <div class="sidebar-header d-flex align-items-center justify-content-start">
         <a href="{{route('dashboards')}}" class="navbar-brand">
 
-            <h4 class="logo-title d-none d-sm-block" data-setting="app_name">Arran Weather</h4>
+            <h4 class="logo-title >Arran Weather</h4>
         </a>
         <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
             <i class="icon">
