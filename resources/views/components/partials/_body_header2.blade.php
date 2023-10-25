@@ -8,7 +8,7 @@
     </button>
     <a href="{{route('dashboards')}}" class="navbar-brand col-md-2 col-lg-3">
       <x-logo />
-      <h4 class="logo-title d-none d-sm-block" data-setting="app_name">Arran Weather</h4>
+      <h4 class="logo-title d-none d-sm-block" >Arran Weather</h4>
     </a>
     @include('components.partials.horizontal-nav')
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
