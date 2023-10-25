@@ -26,7 +26,7 @@ $count= count($data['channel']['item']);
           for ($i = 0; $i <= $count; $i++){ 
 
 if ($count =1){
-  if (str_contains($data['channel']['item']['title'], 'Churchill')){
+  if (str_contains($data['channel']['item']['title'], 'Arran')){
                 
     if (str_contains($data['channel']['item']['title'], 'ALERT')){
          $flood = '   <div class="alert alert-warning  mt-3" role="alert">
@@ -45,7 +45,7 @@ $flood ='   <div class="alert alert-danger  mt-3" role="alert">
 } 
 }}
 if ($count >1){
-if (str_contains($data['channel']['item'][$i]['title'], 'Churchill')){
+if (str_contains($data['channel']['item'][$i]['title'], 'Arran')){
                 
                                     if (str_contains($data['channel']['item'][$i]['title'], 'ALERT')){
                                          $flood = '   <div class="alert alert-warning  mt-3" role="alert">
