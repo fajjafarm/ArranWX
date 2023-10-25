@@ -21,7 +21,7 @@ $i = 1;
 $count= count($data['channel']['item']);
 //$count= $count-1;
           for ($i = 0; $i <= $count; $i++){ 
-            if (str_contains($data['channel']['item'][$i]['title'], 'Churchill')){
+            if (str_contains($data['channel']['item'][1]['title'], 'Churchill')){
                 
                                     if (str_contains($data['channel']['item'][$i]['title'], 'ALERT')){
                                          $flood = '   <div class="alert alert-warning  mt-3" role="alert">
