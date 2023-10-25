@@ -14,7 +14,7 @@
 
 
 $data = json_decode($json, true);
-
+print_r($data);
 $i = 1;
 //if (empty(count($data['channel']['item']))){
   if( isset( $data['channel']['item']['title'] ) ){
