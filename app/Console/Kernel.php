@@ -29,7 +29,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\warningcron::class,
         \App\Console\Commands\webcamcron::class,
         \App\Console\Commands\whitingbaycron::class,
-        \App\Console\Commands\weatherxmawpi::class,
+        \App\Console\Commands\weatherxmapi::class,
     ];
     /**
      * Define the application's command schedule.
