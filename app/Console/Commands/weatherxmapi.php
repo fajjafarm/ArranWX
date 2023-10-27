@@ -12,7 +12,7 @@ if (!$con) {
     mysqli_select_db($con,"awx_data");
 
     //read the json file contents
-    $jsondata = file_get_contents('https://api.weatherxm.com/api/v1/cells/871909643ffffff/devices/ed294950-6ff5-11ed-9972-4f669f2d96bd');
+    $jsondata = file_get_contents('https://api.weatherxm.com/api/v1/cells/871909643ffffff/devices/raspy-maize-noreaster');
     
     //convert json object to php associative array
     $data = json_decode($jsondata, true);
