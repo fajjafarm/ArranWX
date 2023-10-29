@@ -16,7 +16,6 @@
 
 
 
-  <?php  echo $flood; ?>
     <div class="sidebar-body pt-0 data-scrollbar">
         <div class="sidebar-list" id="sidebar">
         @include('components.partials.vertical-nav')
