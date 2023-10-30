@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        {{ $title }} | Arran Weather</title>
+        {{ $title }} | Arran Weather2</title>
     <meta name="description"
         content="Long range  weather forecasts and data from Arran">
     <meta name="keywords"
