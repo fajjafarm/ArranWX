@@ -44,6 +44,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     Route::get('/dashboards', [HomeController::class, 'index'])->name('dashboards');
     // Dashboard Routes
     Route::get('/wx', [HomeController::class, 'index3'])->name('wxmain');
+    Route::get('/warnings', [HomeController::class, 'warnings'])->name('warnings');
     
     Route::get('/ferry-forecast', [HomeController::class, 'ferryforecast'])->name('ferryforecast');
     

@@ -8,7 +8,7 @@
       <div class="col-lg-2 col-lg-3 navbar-brand">
         <a href="{{route('dashboards')}}" class="d-flex">
             <x-logo />
-            <h4 class="logo-title d-none d-sm-block" data-setting="app_name">Arran Weather</h4>
+            <h4 class="logo-title d-none d-sm-block" >Arran Weather</h4>
         </a>
       </div>
       @include('components.partials.horizontal-nav')

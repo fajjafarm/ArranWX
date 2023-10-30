@@ -34,6 +34,13 @@ class HomeController extends Controller
         $assets = ['chart', 'animation'];
         return view('wx.ferryforecast', compact('title','description','assets'));
     }
+    public function warnings(Request $request): View
+    {
+        $title = "Weather Warnings";
+        $description = "Weather warnings status for Arran and South West Scotland";
+        $assets = ['chart', 'animation'];
+        return view('warnings', compact('title','description','assets'));
+    }
     
   
         public function arranwebcams(Request $request): View

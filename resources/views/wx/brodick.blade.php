@@ -3,9 +3,15 @@ $lat ='55.575';
 $lon ='-5.1452';
 $alt ='0';
 $urlfetch = 'https://api.met.no/weatherapi/locationforecast/2.0/complete?lat=55.575&lon=-5.1452&altitude=0';
-
-
-$location =''; ?>
+$bgcol0 =''; 
+$bgcol='';
+$bgcol0c = '';
+$bgcolc='';
+$wind_gust=0;
+$location =''; 
+$precipitation_amount = 0;
+$bggradtempa='';
+$bgcoltempa0='';?>
 
 
 <x-app-layout :assets="$assets ?? []" :title="$title ?? []" :location="$location" :isBanner="true">
@@ -32,19 +38,27 @@ $location = strtolower ($location);
 $location = $location.'.json';
 //echo $location;
 $json =Storage::get($location);
-
+$count='';
 $data = json_decode($json, true);
+//print("<pre>".print_r($data,true)."</pre>");
 $i = 0;
 //$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
+//$count = is_null($data['properties']['timeseries']) ? 0 : count($data['properties']['timeseries']);
+if( !isset( $data['properties']['timeseries'] ) ){
+    echo'forecast error';
+   
+ }
+ else { 
+
 $count= count($data['properties']['timeseries']);
 $count = $count-2;
-
-//$datar = implode(" ",$data['geometry']['coordinates']);
+//
+$datar = implode(" ",$data['geometry']['coordinates']);
 
 
 ?>
 
-                                    <table class="table table-striped mb-0">
+                                    <table class="table table-striped mb-0" style="height:fit-content">
                         <thead>
                            <tr class="table-dark">
                            <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $data['geometry']['coordinates'][1]; ?> | lon: <?php echo $data['geometry']['coordinates'][0]; ?> | alt: <?php echo $data['geometry']['coordinates'][2]; ?>m</td>
@@ -78,6 +92,84 @@ $wvht = round(2.55*log($wvht,6)+2,2);
 if ($wvht <=0.5 ){$wvht = 'calm';}else
 $wvht = $wvht.'ft';
 $rotate = $data['properties']['timeseries'][$i]['data']['instant']['details']['wind_from_direction'];
+
+
+$tempa =$data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature'];
+if ((round($tempa)>=-20 && (round($tempa) < -7))){
+
+	$bgcoltempa = '#6610f2';
+	$txcoltempa = 'color:#000000';}
+if ((round($tempa)>=-7 && (round($tempa) < -3))){
+
+	$bgcoltempa = '#6f42c1';
+	$txcoltempa = 'color:#000000';}
+	
+if ((round($tempa)>=-3 && (round($tempa) < -1))){
+
+	$bgcoltempa = '#0d6efd';
+	$txcoltempa = 'color:#000000';}	
+if ((round($tempa)>=-1 && (round($tempa) < 1))){
+
+	$bgcoltempa = '#0dcaf0';
+	$txcoltempa = 'color:#000000';}	
+if ((round($tempa)>=1 && (round($tempa) < 3))){
+
+	$bgcoltempa = '#0dcaf0';
+	$txcoltempa = 'color:#000000';}	
+if ((round($tempa)>=3 && (round($tempa) < 5))){
+
+	$bgcoltempa = '#20c997';
+	$txcoltempa = 'color:#000000';}
+    if ((round($tempa)>=5 && (round($tempa) < 9))){
+
+        $bgcoltempa = '#198754';
+        $txcoltempa = 'color:#000000';}
+        
+            if ((round($tempa)>=9 && (round($tempa) < 12))){
+
+                $bgcoltempa = '#557E53';
+                $txcoltempa = 'color:#000000';}
+                if ((round($tempa)>=12 && (round($tempa) < 15))){
+
+                    $bgcoltempa = '#88B114';
+                    $txcoltempa = 'color:#000000';}
+                    if ((round($tempa)>=15 && (round($tempa) < 18))){
+
+                        $bgcoltempa = '#ffc107';
+                        $txcoltempa = 'color:#000000';}
+                        if ((round($tempa)>=18 && (round($tempa) < 22))){
+
+                            $bgcoltempa = '#fd7e14';
+                            $txcoltempa = 'color:#000000';}
+                            if ((round($tempa)>=22 && (round($tempa) < 26))){
+
+                                $bgcoltempa = '#dc3545';
+                                $txcoltempa = 'color:#000000';}
+             
+                                    if (round($tempa)>=26 ){
+
+                                        $bgcoltempa = '#d63384';
+                                        $txcoltempa = 'color:#000000';} 
+
+
+                                        if (!isset($bgcoltempa0)) {
+                                            $bgcoltempa0=	$bgcoltempa;
+                                                }
+                                            $bggradtempa = 'background-image: linear-gradient(180deg, '.$bgcoltempa0.', '.$bgcoltempa.');';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Direction name
 $dirn = 'not set';
@@ -115,6 +207,78 @@ if (($rotate >= 303.75) && ($rotate < 326.25)){
 $dirn = 'NW'; }
 if (($rotate >= 326.25) && ($rotate < 348.75)){
 $dirn = 'NNW'; }
+
+//wind gradient
+$wind_speed =$wind;
+if ((round($wind_speed)<1)){
+
+	$bgcol = '#FFFFFF';
+	$txcol = 'color:#FFFFFF';
+	
+	}
+
+if ((round($wind_speed)>=1 && (round($wind_speed) < 4))){
+
+	$bgcol = '#CCFFFF';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=4 && (round($wind_speed) < 8))){
+
+	$bgcol = '#00FFFF';
+	$txcol = 'color:#000000';}
+	
+if ((round($wind_speed)>=8 && (round($wind_speed) < 13))){
+
+	$bgcol = '#7FFF7F';
+	$txcol = 'color:#000000';}
+	
+if ((round($wind_speed)>=13 && (round($wind_speed) < 18))){
+
+	$bgcol = '#00FF00';
+	$txcol = 'color:#000000';}	
+if ((round($wind_speed)>=18 && (round($wind_speed) < 25))){
+
+	$bgcol = '#7FFF00';
+	$txcol = 'color:#000000';}	
+if ((round($wind_speed)>=25 && (round($wind_speed) < 31))){
+
+	$bgcol = '#FFFF00';
+	$txcol = 'color:#000000';}	
+if ((round($wind_speed)>=31 && (round($wind_speed) < 39))){
+
+	$bgcol = '#FFD42A';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=39 && (round($wind_speed) < 46))){
+
+	$bgcol = '#FFCC00';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=46 && (round($wind_speed) < 54))){
+
+	$bgcol = '#FF9900';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=55 && (round($wind_speed) < 63))){
+
+	$bgcol = '#993300';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=63 && (round($wind_speed) < 72))){
+
+	$bgcol = '#993366';
+	$txcol = 'color:#000000';}
+if ((round($wind_speed)>=72 )){
+
+	$bgcol = '#FFD42A';
+	$txcol = 'color:#000000';}
+	
+	
+	
+	
+		
+if (!isset($bgcol0)) {
+$bgcol0=	$bgcol;
+	}
+$bggrad = 'background-image: linear-gradient(180deg, '.$bgcol0.', '.$bgcol.');';
+
+
+
 
 //disruption status
 $portt = '';
@@ -202,8 +366,56 @@ $sym = '<img src="../images/weathersymbols/'.$symbol. '.svg" width="50" height="
 if ($symbol == ''){
     $sym ='&nbsp;';
 }
+//if (!isset($bg1)){
+//    $bg1 = $bg2;
+//
+//};
+$bg2 = '';
 
+if ((round($wind_gust)<1)){
 
+	$bgcolgust = '';
+	$txcolgust = 'color:#000000';
+	
+	}
+$wind_gust =$gust;
+if ((round($wind_gust)>=1 && (round($wind_gust) < 4))){
+
+	$bgcolgust = '#CCFFFF';
+	$txcolgust = 'color:#000000';}
+if ((round($wind_gust)>=4 && (round($wind_gust) < 8))){
+
+	$bgcolgust = '#00FFFF';
+	$txcolgust = 'color:#000000';}
+	
+if ((round($wind_gust)>=8 && (round($wind_gust) < 13))){
+
+	$bgcolgust = '#7FFF7F';
+	$txcolgust = 'color:#000000';}
+	
+if ((round($wind_gust)>=13 && (round($wind_gust) < 18))){
+
+	$bgcolgust = '#00FF00';
+	$txcolgust = 'color:#000000';}	
+if ((round($wind_gust)>=18 && (round($wind_gust) < 25))){
+
+	$bgcolgust = '#7FFF00';
+	$txcolgust = 'color:#000000';}	
+if ((round($wind_gust)>=25 && (round($wind_gust) < 31))){
+
+	$bgcolgust = '#FFFF00';
+	$txcolgust = 'color:#000000';}	
+if ((round($wind_gust)>=31 && (round($wind_gust) < 39))){
+
+	$bgcolgust = '#FFD42A';
+	$txcolgust = 'color:#000000';}
+		
+if (!isset($bgcolgust0)) {
+$bgcolgust0=$bgcolgust;
+	}
+$bggradgust = 'background-image: linear-gradient(180deg, '.$bgcolgust0.', '.$bgcolgust.');';
+
+$bgcolgust0=$bgcolgust;
 
 $timee = $data['properties']['timeseries'][$i]['time'];
 $timeedt =new DateTime($timee);
@@ -218,7 +430,13 @@ if (!isset($data['properties']['timeseries'][$i]['data']['next_1_hours']['detail
 } else{
     $rain = $data['properties']['timeseries'][$i]['data']['next_1_hours']['details']['precipitation_amount'];
 }
-
+$precipitation_amount = $rain;
+$precipb = ($precipitation_amount/5);
+if ($precipitation_amount>2){
+	$rpcolor = 'color:#ffffff;';
+}else{
+		$rpcolor = 'color:#000000;';
+}
 if (isset($data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'])){
     $uv= $data['properties']['timeseries'][$i]['data']['instant']['details']['ultraviolet_index_clear_sky'];
 }
@@ -241,21 +459,25 @@ if ($time == '00:00'){
                                                            <td >Fog</td>
                                                            <td >Humidity&nbsp;&nbsp; </td></tr></thead>';
 }
-echo '<tr>';
+echo '<tr style="height:100%">';
 echo ' <td>'.$time. '</td>';
 echo ' <td class="text-dark">'.$sym.'</td>';
-echo ' <td class="text-dark">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). '&degC</td>';
-echo ' <td class="text-dark">'.$wind. ' mph</td>';
-echo ' <td class="text-dark">'.$gust. ' mph*</td>';
+echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggradtempa.'; ">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). ' &degC</div></td>';
+echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggrad.'; ">'.$wind. ' mph</div></td>';
+echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggradgust.'; ">'.$gust. ' mph*</div></td>';
 echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" transform="rotate('.$rotate.')"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg> </td>';
 echo ' <td class="text-dark"> '.$dirn. '</td>';
-echo ' <td class="text-dark"> '.$rain.'mm</td>';
+echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; background-color:rgba(0, 0,255, '.$precipb.');'.$rpcolor.'""> '.$rain.' mm </div></td>';
 echo ' <td class="text-dark"> '.$uv. '</td>';
 echo ' <td class="text-dark"> '.$fog.'%</td>';
 echo ' <td class="text-dark">'.$hum.'%</td>';
 echo '</tr>';
+$bgcol0 = $bgcol;
+$bgcol0c = $bgcolc;
+$bgcoltempa0=	$bgcoltempa;
 $symbol ='';
 $fog ='';
+//$bg1 = $bg2;
 //echo ($data['properties']['timeseries'][$i]['time']);
 }
 //echo "<pre>";
@@ -266,10 +488,10 @@ $updatetimeedt =new DateTime($updatetimee);
 $day2 = $updatetimeedt->format('l jS F');
 $dayy2 = $updatetimeedt->format('d');
 $time2 = $updatetimeedt->format('H:i');
-                ?>
+    ?>
                 
             <thead>    <tr class="table-dark">
-                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $time2.' '.$dayy2.' '.$day2;?> </td>
+                           <td colspan="11"><strong>forecast data from yr.no</strong> Last Update: <?php echo $time2.' '.$dayy2.' '.$day2;}?> </td>
                            </tr></thead>
                 
 

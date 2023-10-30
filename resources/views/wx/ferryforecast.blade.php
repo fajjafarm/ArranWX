@@ -134,28 +134,28 @@ if (($wind)>28){
 }
 }
 if ($dirn == "E"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>23){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
 }
 }
 if ($dirn == "NE"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>23){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
 }
 }
 if ($dirn == "ENE"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>23){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
 }
 }
 if ($dirn == "NNE"){
-$portt = '<button type="button" class="btn btn-warning">Probably  Brodick</button>';
+$portt = '<button type="button" class="btn btn-warning">Possibly  Brodick</button>';
 
 if (($wind)>28){
 	$portt ='<button type="button" class="btn btn-danger">Probably  Brodick</button>';
@@ -186,7 +186,7 @@ $dayy = $timeedt->format('d');
 $time = $timeedt->format('H:i');
 if ($time == '00:00'){
     echo '<thead><tr class="table-dark">
-                <td >weather</td><td colspan ="2">'.$day.'</td>
+                <td colspan ="2">'.$day.'</td><td >weather</td>
                 <td >Temp.</td>
                                            <td >Avg. Wind</td>
                                                <td >Dir</td>

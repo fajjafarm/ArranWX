@@ -29,6 +29,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\warningcron::class,
         \App\Console\Commands\webcamcron::class,
         \App\Console\Commands\whitingbaycron::class,
+      //  \App\Console\Commands\weatherxmapi::class,
     ];
     /**
      * Define the application's command schedule.
@@ -56,6 +57,7 @@ class Kernel extends ConsoleKernel
          $schedule->command('warningcron')->cron('0 */2 * * *');
          $schedule->command('webcamcron')->cron('*/15 * * * *');
          $schedule->command('whitingbaycron')->cron('51 */3 * * *');
+      //   $schedule->command('weatherxmapi')->cron('*/10 * * * *');
     }
 
     /**

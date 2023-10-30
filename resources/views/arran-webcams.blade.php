@@ -13,8 +13,8 @@
 				</div>
 		</div>
                         <div class="card-body">
-                            <h5 class="card-title">Brodick Pier Calmac Webcam</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Brodick Pier CMAL Webcam</h5>
+                            <p class="card-text">A view looking over Brodick Pier</p>
                             <a href="#" class="btn btn-primary">CMAL Brodick</a>
                         </div>
                     </div></div>
@@ -27,9 +27,9 @@
 				</div>
 		</div>
                         <div class="card-body">
-                            <h5 class="card-title">Lochranza Pier Calmac Webcam</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Lochranza Pier Calmac Webcam</a>
+                            <h5 class="card-title">Lochranza Pier CMAL Webcam</h5>
+                            <p class="card-text">A view of Lochranza pier slip way across to Newton shore.</p>
+                            <a href="#" class="btn btn-primary">Lochranza Pier CMAL Webcam</a>
                         </div>
                     </div>
                 <div class="col">
