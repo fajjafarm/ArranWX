@@ -18,7 +18,7 @@
 
     <div class="sidebar-body pt-0 data-scrollbar">
         <div class="sidebar-list" id="sidebar">
-       
+        @include('components.partials.vertical-nav')
         </div>
     </div>
     <div class="sidebar-footer"></div>
