@@ -21,5 +21,5 @@
         @include('components.partials.vertical-nav')
         </div>
     </div>
-    <div class="sidebar-footer"></div>
+    <div class="sidebar-footer">22</div>
 </aside>
