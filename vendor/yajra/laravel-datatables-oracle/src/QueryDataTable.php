@@ -605,7 +605,7 @@ class QueryDataTable extends DataTableAbstract
         $start = $this->request->start();
         $length = $this->request->length();
 
-        $limit = $length > 0 ? $length : 10;
+        $limit = $length > 0 ? $length : 15;
 
         if (is_callable($this->limitCallback)) {
             $this->query->limit($limit);
