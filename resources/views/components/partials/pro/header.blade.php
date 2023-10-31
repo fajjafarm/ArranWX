@@ -13,7 +13,19 @@
                 </svg>
             </i>
         </div>
-
+        <div class="d-flex align-items-center justify-content-between product-offcanvas">
+            <div class="breadcrumb-title border-end me-3 pe-3 d-none d-xl-block">
+                <small class="mb-0 text-capitalize">{{ $title }}</small>
+            </div>
+            <div class="offcanvas offcanvas-end shadow-none iq-product-menu-responsive" tabindex="-1"
+                id="offcanvasBottom">
+                <div class="offcanvas-body">
+                    <ul class="iq-nav-menu list-unstyled">
+                        @include(('vendor.laravel-menu.custom-menu-items'), ['items' => $HopeUIHorizontalMenu->roots()])
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="d-flex align-items-center">
 
             <button id="navbar-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
