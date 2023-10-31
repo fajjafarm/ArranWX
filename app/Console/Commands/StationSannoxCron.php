@@ -6,14 +6,14 @@ use Illuminate\Console\Command;
 //use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
-class BrodickCron extends Command
+class SannoxStationCron extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'sannoxstationcron';
+    protected $signature = 'SannoxStationCron';
 
     /**
      * The console command description.
@@ -42,7 +42,7 @@ $context = stream_context_create($options);
                 $path = "https://api.weatherxm.com/api/v1/cells/871909643ffffff/devices/439b7020-4e94-11ed-9972-4f669f2d96bd";
                 $contents = file_get_contents($path, false, $context);
                 
-                if (! Storage::put('sannoxstationcron.json', $contents)) {
+                if (! Storage::put('SannoxStationCron.json', $contents)) {
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
