@@ -57,6 +57,7 @@ class Kernel extends ConsoleKernel
          $schedule->command('warningcron')->cron('0 */2 * * *');
          $schedule->command('webcamcron')->cron('*/15 * * * *');
          $schedule->command('whitingbaycron')->cron('51 */3 * * *');
+         $schedule->command('sannoxstationcron')->cron('*/10 * * * *');
       //   $schedule->command('weatherxmapi')->cron('*/10 * * * *');
     }
 
