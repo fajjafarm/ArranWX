@@ -1,5 +1,5 @@
 
-<x-app-layout :assets="$assets ?? []" title='Weather Station Data' :isBanner="true">
+<x-app-layout :assets="$assets ?? []" title='Apexcharts' :isBanner="true">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
