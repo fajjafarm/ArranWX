@@ -50,6 +50,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
     
     Route::get('/arran-webcams', [HomeController::class, 'arranwebcams'])->name('arranwebcams');
     Route::get('/earthquakes-near-arran', [HomeController::class, 'quake'])->name('quake');
+    Route::get('/weather-station', [HomeController::class, 'stationcharts'])->name('stationcharts');
 
 
     //Alternative routes
