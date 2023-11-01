@@ -42,7 +42,7 @@ $context = stream_context_create($options);
                 $path = "https://api.weatherxm.com/api/v1/cells/871909643ffffff/devices/439b7020-4e94-11ed-9972-4f669f2d96bd";
                 $contents = file_get_contents($path, false, $context);
                 
-                if (! Storage::put('stationsannoxcron.json', $contents))
+                if (! Storage::put('stationsannoxcron.json', $contents)){
                 $json =Storage::get($location);
                 $data = json_decode($json, true);
                 $isActive = $data['isActive'];
@@ -80,7 +80,7 @@ $context = stream_context_create($options);
                 'snow'=>'', 
                 'hillsnow'=>'', 
                 'rain_rate'=>'']) 
-                
+    }
                 
                 
                 
