@@ -42,7 +42,50 @@ $context = stream_context_create($options);
                 $path = "https://api.weatherxm.com/api/v1/cells/871909643ffffff/devices/439b7020-4e94-11ed-9972-4f669f2d96bd";
                 $contents = file_get_contents($path, false, $context);
                 
-                if (! Storage::put('stationsannoxcron.json', $contents)) {
+                if (! Storage::put('stationsannoxcron.json', $contents))
+                $json =Storage::get($location);
+                $data = json_decode($json, true);
+                $isActive = $data['isActive'];
+                $lastWeatherStationActivity = $data['lastWeatherStationActivity'];
+                $timestamp = $data['current_weather']['timestamp'];
+                $temperature = $data['current_weather']['temperature'];
+                $humidity = $data['current_weather']['humidity'];
+                $wind_speed = $data['current_weather']['wind_speed'];
+                $wind_gust = $data['current_weather']['wind_gust'];
+                $wind_direction = $data['current_weather']['wind_direction'];
+                $uv_index = $data['current_weather']['uv_index'];
+                $precipitation = $data['current_weather']['precipitation'];
+                $pressure = $data['current_weather']['pressure'];
+                $icon = $data['current_weather']['icon'];
+                $feels_like = $data['current_weather']['feels_like'];
+
+
+
+                DB::table('wxm_sannox')->insert(
+                 'isActive'=$isActive, 
+                'lastWeatherStationActivity'=$lastWeatherStationActivity,
+                'timestamp'=$timestamp,
+                'temperature'=$temperature, 
+                'humidity'=$humidity, 
+                'wind_speed'=$wind_speed, 
+                'wind_gust'=$wind_gust,
+                'wind_direction'=$wind_direction,
+                'uv_index'=$uv_index, 
+                'precipitation'=$precipitation, 
+                'pressure'=$pressure , 
+                'icon'=$icon, 
+                'feels_like'=$feels_like, 
+                'modified'='', 
+                'notes'='', 
+                'snow'='', 
+                'hillsnow'='', 
+                'rain_rate'='') 
+                
+                
+                
+                
+                
+                { 
     echo ' The file could not be written to disk...';
 }
      //  Storage::disk('local')->putFileAs('brodick.json', file_get_contents($path, false, $context));
