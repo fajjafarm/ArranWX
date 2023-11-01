@@ -62,7 +62,7 @@ $context = stream_context_create($options);
 
 
 
-                DB::table('wxm_sannox')->insert([
+                DB::connection('wxdata')->table('wxm_sannox')->insert([
                  'isActive'=> $isActive, 
                 'lastWeatherStationActivity'=>$lastWeatherStationActivity,
                 'timestamp'=>$timestamp,
