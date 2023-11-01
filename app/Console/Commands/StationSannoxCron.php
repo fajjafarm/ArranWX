@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 //use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
+use Illuminate\Support\Facades\DB;
 class stationsannoxcron extends Command
 {
     /**
