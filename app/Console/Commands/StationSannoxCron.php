@@ -61,25 +61,25 @@ $context = stream_context_create($options);
 
 
 
-                DB::table('wxm_sannox')->insert(
-                 'isActive'=$isActive, 
-                'lastWeatherStationActivity'=$lastWeatherStationActivity,
-                'timestamp'=$timestamp,
-                'temperature'=$temperature, 
-                'humidity'=$humidity, 
-                'wind_speed'=$wind_speed, 
-                'wind_gust'=$wind_gust,
-                'wind_direction'=$wind_direction,
-                'uv_index'=$uv_index, 
-                'precipitation'=$precipitation, 
-                'pressure'=$pressure , 
-                'icon'=$icon, 
-                'feels_like'=$feels_like, 
-                'modified'='', 
-                'notes'='', 
-                'snow'='', 
-                'hillsnow'='', 
-                'rain_rate'='') 
+                DB::table('wxm_sannox')->insert([
+                 'isActive'=> $isActive, 
+                'lastWeatherStationActivity'=>$lastWeatherStationActivity,
+                'timestamp'=>$timestamp,
+                'temperature'=>$temperature, 
+                'humidity'=>$humidity, 
+                'wind_speed'=>$wind_speed, 
+                'wind_gust'=>$wind_gust,
+                'wind_direction'=>$wind_direction,
+                'uv_index'=>$uv_index, 
+                'precipitation'=>$precipitation, 
+                'pressure'=>$pressure , 
+                'icon'=>$icon, 
+                'feels_like'=>$feels_like, 
+                'modified'=>'', 
+                'notes'=>'', 
+                'snow'=>'', 
+                'hillsnow'=>'', 
+                'rain_rate'=>'']) 
                 
                 
                 
