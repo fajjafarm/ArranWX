@@ -85,7 +85,7 @@ $context = stream_context_create($options);
                 
                 
                 
-                
+       else         
                 { 
     echo ' The file could not be written to disk...';
 }
