@@ -16,10 +16,10 @@ class HomeController extends Controller
         $assets = ['chart', 'animation'];
         return view('dashboards.dashboard', compact('assets'));
     }
-    public function stationcharts(Request $request): View
+    public function weather-station(Request $request): View
     {
         $assets = ['chart', 'animation'];
-        return view('stationcharts', compact('assets'));
+        return view('weather-station', compact('assets'));
     }
 
     public function index1(Request $request): View
