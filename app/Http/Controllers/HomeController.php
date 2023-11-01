@@ -16,6 +16,11 @@ class HomeController extends Controller
         $assets = ['chart', 'animation'];
         return view('dashboards.dashboard', compact('assets'));
     }
+    public function stationcharts(Request $request): View
+    {
+        $assets = ['chart', 'animation'];
+        return view('stationcharts', compact('assets'));
+    }
 
     public function index1(Request $request): View
     {
