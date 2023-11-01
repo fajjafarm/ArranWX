@@ -43,7 +43,7 @@ $context = stream_context_create($options);
                 $contents = file_get_contents($path, false, $context);
                 
                 if (Storage::put('stationsannoxcron.json', $contents)){
-                $json =Storage::get($location);
+                $json =Storage::get('stationsannoxcron.json');
                 $data = json_decode($json, true);
                 $isActive = $data['isActive'];
                 $lastWeatherStationActivity = $data['lastWeatherStationActivity'];
