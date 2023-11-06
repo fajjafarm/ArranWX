@@ -64,16 +64,16 @@ $datar = implode(" ",$data['geometry']['coordinates']);
                            <td colspan="11"><strong>{{ isset($title) ? strtok($title, " ")  : config('app.name', 'Laravel') }}</strong> Forecast | lat: <?php echo $data['geometry']['coordinates'][1]; ?> | lon: <?php echo $data['geometry']['coordinates'][0]; ?> | alt: <?php echo $data['geometry']['coordinates'][2]; ?>m</td>
                            </tr><tr class="table-dark">
                                <td >Today</td>
-                                <td >Weather</td>                                                              
-                                   <td >Temp.</td>
-                                       <td >Avg. Wind</td>
-                                           <td >Gust</td>
-                                               <td >Dir</td>
-                                                   <td >From</td>
-                                                   <td >Rain</td>
-                                                      <td >UV</td>
-                                                           <td >Fog</td>
-                                                           <td >Humidity&nbsp;&nbsp; </td></tr>
+                                <td style="text-align: center;">Weather</td>                                                              
+                                   <td style="text-align: center;">Temp.</td>
+                                       <td style="text-align: center;">Avg. Wind</td>
+                                           <td style="text-align: center;">Gust</td>
+                                               <td style="text-align: center;">Dir</td>
+                                                   <td style="text-align: center;">From</td>
+                                                   <td style="text-align: center;">Rain</td>
+                                                      <td style="text-align: center;">UV</td>
+                                                           <td style="text-align: center;">Fog</td>
+                                                           <td style="text-align: center;">Humidity&nbsp;&nbsp; </td></tr>
                         </thead>
                         <tbody><?php
 //echo ($data['properties']['timeseries'][0]['data']['instant']['details']['air_pressure_at_sea_level']);
@@ -461,16 +461,16 @@ if ($time == '00:00'){
 }
 echo '<tr style="height:100%">';
 echo ' <td>'.$time. '</td>';
-echo ' <td class="text-dark">'.$sym.'</td>';
+echo ' <td class="text-dark" style="text-align: center;">'.$sym.'</td>';
 echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggradtempa.'; ">'.($data['properties']['timeseries'][$i]['data']['instant']['details']['air_temperature']). ' &degC</div></td>';
 echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggrad.'; ">'.$wind. ' mph</div></td>';
 echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; '.$bggradgust.'; ">'.$gust. ' mph*</div></td>';
 echo ' <td class="text-dark"> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" transform="rotate('.$rotate.')"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg> </td>';
-echo ' <td class="text-dark"> '.$dirn. '</td>';
+echo ' <td class="text-dark" style="text-align: center;"> '.$dirn. '</td>';
 echo ' <td class="text-dark" style="height: 100%"><div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; background-color:rgba(0, 0,255, '.$precipb.');'.$rpcolor.'""> '.$rain.' mm </div></td>';
-echo ' <td class="text-dark"> '.$uv. '</td>';
-echo ' <td class="text-dark"> '.$fog.'%</td>';
-echo ' <td class="text-dark">'.$hum.'%</td>';
+echo ' <td class="text-dark" style="text-align: center;"> '.$uv. '</td>';
+echo ' <td class="text-dark" style="text-align: center;"> '.$fog.'%</td>';
+echo ' <td class="text-dark" style="text-align: center;">'.$hum.'%</td>';
 echo '</tr>';
 $bgcol0 = $bgcol;
 $bgcol0c = $bgcolc;
