@@ -48,6 +48,7 @@ class Kernel extends ConsoleKernel
          $schedule->command('kildonnancron')->cron('17 */3 * * *');
          $schedule->command('kilmorycron')->cron('19 */3 * * *');
          $schedule->command('lamlashcron')->cron('21 */3 * * *');
+         $schedule->command('lochranzacron')->cron('21 */3 * * *');
          $schedule->command('machriecron')->cron('28 */3 * * *');
          $schedule->command('pirnmillcron')->cron('29 */3 * * *');
          $schedule->command('quakecron')->cron('5 */6 * * *');
