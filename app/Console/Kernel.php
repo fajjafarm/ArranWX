@@ -22,6 +22,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\lamlashcron::class,
         \App\Console\Commands\machriecron::class,
         \App\Console\Commands\pirnmillcron::class,
+        \App\Console\Commands\lochranzacron::class,
         \App\Console\Commands\quakecron::class,
         \App\Console\Commands\sannoxcron::class,
         \App\Console\Commands\shiskinecron::class,
