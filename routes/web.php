@@ -62,6 +62,7 @@ Route::group(['middleware' => ['auth','verified']], function () {
 Route::group(['prefix' => 'Forecasts'], function() {
     //Example Page Routs
     Route::get('Brodick', [HomeController::class, 'brodick'])->name('brodick');
+    Route::get('Blackwaterfoot', [HomeController::class, 'blackwaterfoot'])->name('blackwaterfoot');
     Route::get('Corrie', [HomeController::class, 'corrie'])->name('corrie');
     Route::get('Dougarie', [HomeController::class, 'dougarie'])->name('dougarie');
     Route::get('Lamlash', [HomeController::class, 'lamlash'])->name('lamlash');
