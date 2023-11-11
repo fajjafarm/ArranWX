@@ -1,4 +1,4 @@
-<x-app-layout :assets="$assets ?? []" :title='Northern Lights / Aurora borealis' ?? []" :isBanner="true">
+<x-app-layout :assets="$assets ?? []" :title="$title ?? []" :isBanner="true">
 
 <div class="bd-example">
             <div class="row  row-cols-1 row-cols-md-2 g-4">
