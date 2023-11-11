@@ -113,6 +113,11 @@ class HomeController extends Controller
         return view('wx.brodick', compact('title'));
         
     }
+    $title = "Northern Lights / Aurora Borealis Forecast";
+    //$location = "Brodick";
+    return view('northernlights', compact('title'));
+    
+}
     public function blackwaterfoot(Request $request): View
     {
         $title = "Blackwaterfoot Long Range Forecast";
