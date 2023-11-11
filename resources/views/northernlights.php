@@ -1,154 +1,73 @@
-<x-app-layout title='Northern Lights / Aurora borealis' :assets="$assets ?? []" :isBanner="true">
+<x-app-layout :assets="$assets ?? []" :title='Northern Lights / Aurora borealis' ?? []" :isBanner="true">
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">What is Lorem Ipsum?</h4>
+<div class="bd-example">
+            <div class="row  row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+            
+		<div class='wrapper' align="center">
+			<div class='twitchWrapper'>
+				<div class='twitchStream'>
+					<iframe src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com" frameborder="0" scrolling="no" ></iframe>
+				</div>
+				</div>
+		</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Brodick Pier CMAL Webcam</h5>
+                            <p class="card-text">A view looking over Brodick Pier</p>
+                            <a href="#" class="btn btn-primary">CMAL Brodick</a>
+                        </div>
+                    </div></div>
+                                      <div class="card">
+		<div class='wrapper'>
+			<div class='twitchWrapper'>
+				<div class='twitchStream'>
+					<iframe src="https://player.twitch.tv/?channel=cmallochranza&parent=wx.arranweather.com" frameborder="0" scrolling="no" ></iframe>
+				</div>
+				</div>
+		</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lochranza Pier CMAL Webcam</h5>
+                            <p class="card-text">A view of Lochranza pier slip way across to Newton shore.</p>
+                            <a href="#" class="btn btn-primary">Lochranza Pier CMAL Webcam</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Why do we use it?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like). </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Where does it come from?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Where can I get some?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Why do we use it?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Why do we use it?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Why do we use it?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Why do we use it?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="header-title">
-                        <h4 class="card-title">Why do we use it?</h4>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, content here', making it look like
-                        readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                        their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-                        purpose (injected humour and the like). </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="col">
+                    <div class="card">
+            
+<div >
+<?php $string1=Storage::url('public/stringcam1.jpg');?>
+<?php $string2=Storage::url('public/stringcam2.jpg');?>
+<?php $brodickcam=Storage::url('public/brodickwebcam.jpg');?>
+                        <div class="card-body">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $string1 ?>" />
+                            <h5 class="card-title">NAC String Road Cam West</h5>
+                            <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
+                            <a href="https://www.north-ayrshire.gov.uk/roads-and-travel/roadcams.aspx" class="btn btn-primary">NAC Road Cams</a>
+                        </div>
+                    </div></div>   </div>                 <div class="card">
+            
+<div >
+                        <div class="card-body">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $string2 ?>" />
+                            <h5 class="card-title">NAC String Road Cam East</h5>
+                            <p class="card-text">Handy to check in winter months for snow at the top of the string road</p>
+                            <a href="https://www.north-ayrshire.gov.uk/roads-and-travel/roadcams.aspx" class="btn btn-primary">NAC Road Cams</a>
+                        </div>
+                    </div></div>
+                    <div class="card">
+            
+<div >
+                        <div class="card-body">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="66%" src="<?php echo $brodickcam ?>" />
+                            <h5 class="card-title">Cottage on Arran Webcam</h5>
+                            <p class="card-text">A fantastic view across Brodick Beach, over the bay and up to Goatfell. Webcam is run by the amazing team at Cottages On Arran team</p>
+                            <a href="https://www.cottagesonarran.co.uk/arran-webcam/" class="btn btn-primary">cottageonarran.com</a>
+                        </div>
+                    </div></div>
+                
+                 </div>
+                  </div>
+
+
 </x-app-layout>
-
