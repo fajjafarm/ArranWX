@@ -8,7 +8,7 @@
 		<div class='wrapper' align="center">
 			<div class='twitchWrapper'>
 				<div class='twitchStream'>
-					<iframe src="https://player.twitch.tv/?channel=cmalbrodick&parent=wx.arranweather.com" frameborder="0" scrolling="no" ></iframe>
+					
 				</div>
 				</div>
 		</div>
@@ -22,7 +22,7 @@
 		<div class='wrapper'>
 			<div class='twitchWrapper'>
 				<div class='twitchStream'>
-					<iframe src="https://player.twitch.tv/?channel=cmallochranza&parent=wx.arranweather.com" frameborder="0" scrolling="no" ></iframe>
+					
 				</div>
 				</div>
 		</div>
