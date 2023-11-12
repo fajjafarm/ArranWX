@@ -31,7 +31,7 @@ Route::get('/storage', function () {
 });
 
 //UI Pages Routs
-Route::get('/', [HomeController::class, 'uisheet'])->name('uisheet');
+Route::get('/', [HomeController::class, 'brodick'])->name('brodick');
 
 Route::group(['middleware' => ['auth','verified']], function () {
     // Permission Module
