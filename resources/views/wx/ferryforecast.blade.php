@@ -111,6 +111,16 @@ if ($dirn == 'NW'){
 $portt = '<button type="button" class="btn btn-warning">Possibly  Ardrossan</button>';
 }
 }
+if ($dirn == 'WNW'){
+    if (($wind)>25){
+        $portt = '<button type="button" class="btn btn-warning">Possibly  Ardrossan</button>';
+        }
+  
+    
+    if (($wind)>30){
+        $portt ='<button type="button" class="btn btn-danger">Probably  Ardrossan</button>';
+    }
+    }
 if ($dirn == 'WSW'){
 $portt = '<button type="button" class="btn btn-warning">Possibly  Ardrossan</button>';
 
